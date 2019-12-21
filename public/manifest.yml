@@ -1,0 +1,15 @@
+---
+applications:
+  - name: main
+    memory: 512M
+    instances: 1
+    disk_quota: 1024M
+    timeout: 60
+    random-route: true
+    services:
+      - mongo-for-atlas
+      - performance-monitoring-auto
+      - atlas2-stormpath-credentials
+    buildpack: sdk-for-nodejs
+routes:
+  - route: atlas2.wardleymaps.com

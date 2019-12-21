@@ -1,0 +1,8 @@
+{
+  "short_name": "Doctrine Evaluation Table",
+  "name": "Assess how competitive is your organisation!",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
