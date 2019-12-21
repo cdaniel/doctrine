@@ -1,0 +1,10 @@
+---
+applications:
+  - name: doctrine
+    memory: 512M
+    instances: 1
+    timeout: 60
+    random-route: true
+    buildpack: sdk-for-nodejs
+routes:
+  - route: doctrine.wardleymaps.com
