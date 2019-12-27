@@ -10,6 +10,8 @@ const logoStyle = {
     marginTop: -5
 };
 
+const state = {};
+
 function App() {
 
     return (
@@ -35,79 +37,79 @@ function App() {
                         <tbody>
                         <tr>
                             <th rowSpan={3} scope="row">{strings.phaseI}</th>
-                            <SinglePieceOfDoctrine doctrineKey="knowYourUsers"/>
-                            <SinglePieceOfDoctrine doctrineKey="systematicLearning"/>
-                            <SinglePieceOfDoctrine doctrineKey="highSituationalAwareness"/>
-                            <SinglePieceOfDoctrine doctrineKey="commonLanguage"/>
+                            <SinglePieceOfDoctrine doctrineKey="knowYourUsers" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="systematicLearning" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="highSituationalAwareness" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="commonLanguage" state={state}/>
                         </tr>
                         <tr>
-                            <SinglePieceOfDoctrine doctrineKey="challenge"/>
-                            <SinglePieceOfDoctrine doctrineKey="focusOnUserNeeds"/>
-                            <SinglePieceOfDoctrine doctrineKey="bias"/>
-                            <SinglePieceOfDoctrine doctrineKey="thinkSmall"/>
+                            <SinglePieceOfDoctrine doctrineKey="challenge" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="focusOnUserNeeds" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="bias" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="thinkSmall" state={state}/>
                         </tr>
                         <tr>
-                            <SinglePieceOfDoctrine doctrineKey="methods"/>
+                            <SinglePieceOfDoctrine doctrineKey="methods" state={state}/>
                             <td colSpan={3}/>
                         </tr>
 
 
                         <tr>
                             <th rowSpan={4} scope="row">{strings.phaseII}</th>
-                            <SinglePieceOfDoctrine doctrineKey="beTransparent"/>
-                            <SinglePieceOfDoctrine doctrineKey="moveFast"/>
-                            <SinglePieceOfDoctrine doctrineKey="bePragmatic"/>
-                            <SinglePieceOfDoctrine doctrineKey="thinkFast"/>
+                            <SinglePieceOfDoctrine doctrineKey="beTransparent" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="moveFast" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="bePragmatic" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="thinkFast" state={state}/>
                         </tr>
                         <tr>
-                            <SinglePieceOfDoctrine doctrineKey="focusOutcome"/>
-                            <SinglePieceOfDoctrine doctrineKey="appropriateTools"/>
-                            <SinglePieceOfDoctrine doctrineKey="manageInertia"/>
-                            <SinglePieceOfDoctrine doctrineKey="effectivenessOverEfficiency"/>
+                            <SinglePieceOfDoctrine doctrineKey="focusOutcome" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="appropriateTools" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="manageInertia" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="effectivenessOverEfficiency" state={state}/>
                         </tr>
                         <tr>
-                            <SinglePieceOfDoctrine doctrineKey="thinkAptitudeAndAttitude"/>
-                            <SinglePieceOfDoctrine doctrineKey="thinkSmallTeam"/>
-                            <SinglePieceOfDoctrine doctrineKey="standards"/>
-                            <SinglePieceOfDoctrine doctrineKey="failure"/>
+                            <SinglePieceOfDoctrine doctrineKey="thinkAptitudeAndAttitude" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="thinkSmallTeam" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="standards" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="failure" state={state}/>
                         </tr>
                         <tr>
-                            <SinglePieceOfDoctrine doctrineKey="iterativeStrategy"/>
-                            <SinglePieceOfDoctrine doctrineKey="action"/>
-                            <SinglePieceOfDoctrine doctrineKey="distributePower"/>
+                            <SinglePieceOfDoctrine doctrineKey="iterativeStrategy" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="action" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="distributePower" state={state}/>
                             <td/>
                         </tr>
 
                         <tr>
                             <th rowSpan={3} scope="row">{strings.phaseIII}</th>
-                            <SinglePieceOfDoctrine doctrineKey="purpose"/>
-                            <SinglePieceOfDoctrine doctrineKey="exceptionalStandards"/>
-                            <SinglePieceOfDoctrine doctrineKey="direction"/>
-                            <SinglePieceOfDoctrine doctrineKey="biasTowardsNew"/>
+                            <SinglePieceOfDoctrine doctrineKey="purpose" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="exceptionalStandards" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="direction" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="biasTowardsNew" state={state}/>
                         </tr>
                         <tr>
-                            <SinglePieceOfDoctrine doctrineKey="betterWithLess"/>
-                            <SinglePieceOfDoctrine doctrineKey="optimiseFlow"/>
-                            <SinglePieceOfDoctrine doctrineKey="thinkBig"/>
-                            <SinglePieceOfDoctrine doctrineKey="beHumble"/>
+                            <SinglePieceOfDoctrine doctrineKey="betterWithLess" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="optimiseFlow" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="thinkBig" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="beHumble" state={state}/>
                         </tr>
                         <tr>
-                            <SinglePieceOfDoctrine doctrineKey="beOwner"/>
-                            <SinglePieceOfDoctrine doctrineKey="complexStrategy"/>
-                            <SinglePieceOfDoctrine doctrineKey="seekTheBest"/>
+                            <SinglePieceOfDoctrine doctrineKey="beOwner" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="complexStrategy" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="seekTheBest" state={state}/>
                             <td/>
                         </tr>
 
 
                         <tr>
                             <th rowSpan={2} scope="row">{strings.phaseIV}</th>
-                            <SinglePieceOfDoctrine doctrineKey="landscape"/>
-                            <SinglePieceOfDoctrine doctrineKey="noCore"/>
-                            <SinglePieceOfDoctrine doctrineKey="ecosystem"/>
-                            <SinglePieceOfDoctrine doctrineKey="noOneCulture"/>
+                            <SinglePieceOfDoctrine doctrineKey="landscape" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="noCore" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="ecosystem" state={state}/>
+                            <SinglePieceOfDoctrine doctrineKey="noOneCulture" state={state}/>
                         </tr>
                         <tr>
-                            <SinglePieceOfDoctrine doctrineKey="constantEvolution"/>
+                            <SinglePieceOfDoctrine doctrineKey="constantEvolution" state={state}/>
                             <td colSpan={3}/>
                         </tr>
                         </tbody>

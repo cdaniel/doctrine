@@ -26,7 +26,10 @@ class SinglePieceOfDoctrine extends React.Component {
                 }
             }
         }
-
+        if (!this.props.state[this.props.doctrineKey]) {
+            this.props.state[this.props.doctrineKey] = {evaluation: 0};
+        }
+        this.props.state[this.props.doctrineKey].evaluation = evaluation;
         this.setState({evaluation: evaluation, style: {backgroundColor, textShadow}});
     }
 
