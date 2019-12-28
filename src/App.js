@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.css';
-import {Col, Container, Navbar, NavbarBrand, Row, Table} from 'reactstrap';
+import {Col, Container, Nav, Navbar, NavbarBrand, NavItem, NavLink, Row, Table} from 'reactstrap';
 import strings from './strings';
 import SinglePieceOfDoctrine from './SinglePieceOfDoctrine';
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faFileDownload, faFileUpload} from '@fortawesome/free-solid-svg-icons';
+import Files from 'react-files'
 
 const logoStyle = {
     height: 30,
@@ -18,6 +20,39 @@ class App extends React.Component {
     constructor() {
         super();
         this.updateEvaluation = this.updateEvaluation.bind(this);
+        this.downlad = App.download.bind(this);
+        this.onFilesChange = this.onFilesChange.bind(this);
+        this.fileReader = new FileReader();
+        this.fileReader.onload = (event) => {
+            let loadedState = JSON.parse(event.target.result);
+            const categories = ["knowYourUsers", "systematicLearning", "highSituationalAwareness",
+                "commonLanguage", "challenge", "focusOnUserNeeds", "removeBiasAndDuplication",
+                "thinkSmallDetails", "methods", "beTransparent", "moveFast", "bePragmatic",
+                "thinkFast", "focusOutcome", "appropriateTools", "manageInertia", "effectivenessOverEfficiency",
+                "thinkAptitudeAndAttitude", "thinkSmallTeam", "standards", "failure",
+                "iterativeStrategy", "action", "distributePower", "purpose", "exceptionalStandards",
+                "direction", "biasTowardsNew", "biasTowardsNew", "optimiseFlow", "thinkBig",
+                "beHumble", "beOwner", "complexStrategy", "seekTheBest", "landscape",
+                "noCore", "ecosystem", "noOneCulture", "constantEvolution"
+            ];
+            categories.forEach((category) => {
+                if (loadedState[category] && loadedState[category].evaluation) {
+                    if (loadedState[category].evaluation === 1) {
+                        state[category] = {evaluation: 1};
+                    } else if (loadedState[category].evaluation === 2) {
+                        state[category] = {evaluation: 2};
+                    } else if (loadedState[category].evaluation === 3) {
+                        state[category] = {evaluation: 3};
+                    } else {
+                        state[category] = {evaluation: 0};
+                    }
+                } else {
+                    state[category] = {evaluation: 0};
+                }
+            });
+            this.forceUpdate();
+
+        };
     }
 
     updateEvaluation(key) {
@@ -31,6 +66,28 @@ class App extends React.Component {
         this.forceUpdate();
     };
 
+
+    static download(e) {
+        e.preventDefault();
+        let contentType = "application/json;charset=utf-8;";
+        let today = (new Date()).toLocaleString();
+        let finalJSON = Object.assign({
+            comment: "Assessment created at doctrine.wardleymaps.com",
+            createdAt: today
+        }, state);
+        const a = document.createElement('a');
+        a.download = 'Wardley\'s Doctrine assessment ' + today + '.json';
+        a.href = 'data:' + contentType + ',' + encodeURIComponent(JSON.stringify(finalJSON));
+        a.target = '_blank';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    };
+
+    onFilesChange(file) {
+        this.fileReader.readAsText(file[0]);
+    }
+
     render() {
         return (
             <Container>
@@ -38,8 +95,29 @@ class App extends React.Component {
                     <Col sm={{size: 12}}>
                         <Navbar color="light" light expand="md">
                             <NavbarBrand href="/">
-                                <img src="/leflogo.svg" alt="Home" style={logoStyle}></img>
+                                <img src="/leflogo.svg" alt="Home" style={logoStyle}/>
                             </NavbarBrand>
+                            <Nav navbar className='rightNav ml-auto'>
+                                <NavItem>
+                                    <NavLink href="#load"><Files
+                                        className='files-dropzone'
+                                        onChange={this.onFilesChange}
+                                        // onError={this.onFilesError}
+                                        accepts={['application/json', '.json']}
+                                        multiple={false}
+                                        maxFiles={1}
+                                        maxFileSize={100000}
+                                        minFileSize={0}
+                                        clickable
+                                    >
+                                        <FontAwesomeIcon icon={faFileUpload}/>&nbsp;Load
+                                    </Files></NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink href="#save" onClick={App.download}><FontAwesomeIcon
+                                        icon={faFileDownload}/>&nbsp;Download</NavLink>
+                                </NavItem>
+                            </Nav>
                         </Navbar>
                     </Col>
                 </Row>
@@ -69,9 +147,9 @@ class App extends React.Component {
                                                        callback={this.updateEvaluation}/>
                                 <SinglePieceOfDoctrine doctrineKey="focusOnUserNeeds" state={state}
                                                        callback={this.updateEvaluation}/>
-                                <SinglePieceOfDoctrine doctrineKey="bias" state={state}
+                                <SinglePieceOfDoctrine doctrineKey="removeBiasAndDuplication" state={state}
                                                        callback={this.updateEvaluation}/>
-                                <SinglePieceOfDoctrine doctrineKey="thinkSmall" state={state}
+                                <SinglePieceOfDoctrine doctrineKey="thinkSmallDetails" state={state}
                                                        callback={this.updateEvaluation}/>
                             </tr>
                             <tr>

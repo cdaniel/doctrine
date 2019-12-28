@@ -15,8 +15,8 @@ let strings = new LocalizedStrings({
         commonLanguage: "Use a common language (necessary for collaboration)",
         challenge: "Challenge assumptions (speak up and question)",
         focusOnUserNeeds: "Focus on user needs",
-        bias: "Remove bias and duplication",
-        thinkSmall: "Think small (as in know the details)",
+        removeBiasAndDuplication: "Remove bias and duplication",
+        thinkSmallDetails: "Think small (as in know the details)",
         methods: "Use appropriate methods (e.g. agile vs lean vs six sigma)",
 
         phaseII: "Phase II",
