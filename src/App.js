@@ -12,118 +12,177 @@ const logoStyle = {
 
 const state = {};
 
-function App() {
 
-    return (
-        <Container>
-            <Row>
-                <Col sm={{size: 12}}>
-                    <Navbar color="light" light expand="md">
-                        <NavbarBrand href="/">
-                            <img src="/leflogo.svg" alt="Home" style={logoStyle}></img>
-                        </NavbarBrand>
-                    </Navbar>
-                </Col>
-            </Row>
-            <Row>
-                <Col xs="12">
-                    <Table bordered responsive size="sm">
-                        <thead>
-                        <tr>
-                            <th>{strings.category}</th>
-                            <th colSpan="4" style={{textAlign: "center"}}>{strings.doctrine}</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th rowSpan={3} scope="row">{strings.phaseI}</th>
-                            <SinglePieceOfDoctrine doctrineKey="knowYourUsers" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="systematicLearning" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="highSituationalAwareness" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="commonLanguage" state={state}/>
-                        </tr>
-                        <tr>
-                            <SinglePieceOfDoctrine doctrineKey="challenge" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="focusOnUserNeeds" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="bias" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="thinkSmall" state={state}/>
-                        </tr>
-                        <tr>
-                            <SinglePieceOfDoctrine doctrineKey="methods" state={state}/>
-                            <td colSpan={3}/>
-                        </tr>
+class App extends React.Component {
 
+    constructor() {
+        super();
+        this.updateEvaluation = this.updateEvaluation.bind(this);
+    }
 
-                        <tr>
-                            <th rowSpan={4} scope="row">{strings.phaseII}</th>
-                            <SinglePieceOfDoctrine doctrineKey="beTransparent" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="moveFast" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="bePragmatic" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="thinkFast" state={state}/>
-                        </tr>
-                        <tr>
-                            <SinglePieceOfDoctrine doctrineKey="focusOutcome" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="appropriateTools" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="manageInertia" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="effectivenessOverEfficiency" state={state}/>
-                        </tr>
-                        <tr>
-                            <SinglePieceOfDoctrine doctrineKey="thinkAptitudeAndAttitude" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="thinkSmallTeam" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="standards" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="failure" state={state}/>
-                        </tr>
-                        <tr>
-                            <SinglePieceOfDoctrine doctrineKey="iterativeStrategy" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="action" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="distributePower" state={state}/>
-                            <td/>
-                        </tr>
+    updateEvaluation(key) {
+        if (!state[key]) {
+            state[key] = {
+                evaluation: 1
+            }
+        } else {
+            state[key].evaluation = (state[key].evaluation + 1) % 4;
+        }
+        this.forceUpdate();
+    };
 
-                        <tr>
-                            <th rowSpan={3} scope="row">{strings.phaseIII}</th>
-                            <SinglePieceOfDoctrine doctrineKey="purpose" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="exceptionalStandards" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="direction" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="biasTowardsNew" state={state}/>
-                        </tr>
-                        <tr>
-                            <SinglePieceOfDoctrine doctrineKey="betterWithLess" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="optimiseFlow" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="thinkBig" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="beHumble" state={state}/>
-                        </tr>
-                        <tr>
-                            <SinglePieceOfDoctrine doctrineKey="beOwner" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="complexStrategy" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="seekTheBest" state={state}/>
-                            <td/>
-                        </tr>
+    render() {
+        return (
+            <Container>
+                <Row>
+                    <Col sm={{size: 12}}>
+                        <Navbar color="light" light expand="md">
+                            <NavbarBrand href="/">
+                                <img src="/leflogo.svg" alt="Home" style={logoStyle}></img>
+                            </NavbarBrand>
+                        </Navbar>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs="12">
+                        <Table bordered responsive size="sm">
+                            <thead>
+                            <tr>
+                                <th>{strings.category}</th>
+                                <th colSpan="4" style={{textAlign: "center"}}>{strings.doctrine}</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th rowSpan={3} scope="row">{strings.phaseI}</th>
+                                <SinglePieceOfDoctrine doctrineKey="knowYourUsers" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="systematicLearning" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="highSituationalAwareness" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="commonLanguage" state={state}
+                                                       callback={this.updateEvaluation}/>
+                            </tr>
+                            <tr>
+                                <SinglePieceOfDoctrine doctrineKey="challenge" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="focusOnUserNeeds" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="bias" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="thinkSmall" state={state}
+                                                       callback={this.updateEvaluation}/>
+                            </tr>
+                            <tr>
+                                <SinglePieceOfDoctrine doctrineKey="methods" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <td colSpan={3}/>
+                            </tr>
 
 
-                        <tr>
-                            <th rowSpan={2} scope="row">{strings.phaseIV}</th>
-                            <SinglePieceOfDoctrine doctrineKey="landscape" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="noCore" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="ecosystem" state={state}/>
-                            <SinglePieceOfDoctrine doctrineKey="noOneCulture" state={state}/>
-                        </tr>
-                        <tr>
-                            <SinglePieceOfDoctrine doctrineKey="constantEvolution" state={state}/>
-                            <td colSpan={3}/>
-                        </tr>
-                        </tbody>
-                    </Table>
-                </Col>
-            </Row>
-            <Row>
-                <Col sm={{size: 12}}>
-                    Based on Simon Wardley's work. Learn more at <a
-                    href={"https://learn.wardleymaps.com/"}>https://learn.wardleymaps.com/</a>.
-                </Col>
-            </Row>
-        </Container>
-    );
+                            <tr>
+                                <th rowSpan={4} scope="row">{strings.phaseII}</th>
+                                <SinglePieceOfDoctrine doctrineKey="beTransparent" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="moveFast" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="bePragmatic" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="thinkFast" state={state}
+                                                       callback={this.updateEvaluation}/>
+                            </tr>
+                            <tr>
+                                <SinglePieceOfDoctrine doctrineKey="focusOutcome" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="appropriateTools" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="manageInertia" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="effectivenessOverEfficiency" state={state}
+                                                       callback={this.updateEvaluation}/>
+                            </tr>
+                            <tr>
+                                <SinglePieceOfDoctrine doctrineKey="thinkAptitudeAndAttitude" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="thinkSmallTeam" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="standards" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="failure" state={state}
+                                                       callback={this.updateEvaluation}/>
+                            </tr>
+                            <tr>
+                                <SinglePieceOfDoctrine doctrineKey="iterativeStrategy" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="action" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="distributePower" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <td/>
+                            </tr>
+
+                            <tr>
+                                <th rowSpan={3} scope="row">{strings.phaseIII}</th>
+                                <SinglePieceOfDoctrine doctrineKey="purpose" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="exceptionalStandards" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="direction" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="biasTowardsNew" state={state}
+                                                       callback={this.updateEvaluation}/>
+                            </tr>
+                            <tr>
+                                <SinglePieceOfDoctrine doctrineKey="betterWithLess" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="optimiseFlow" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="thinkBig" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="beHumble" state={state}
+                                                       callback={this.updateEvaluation}/>
+                            </tr>
+                            <tr>
+                                <SinglePieceOfDoctrine doctrineKey="beOwner" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="complexStrategy" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="seekTheBest" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <td/>
+                            </tr>
+
+
+                            <tr>
+                                <th rowSpan={2} scope="row">{strings.phaseIV}</th>
+                                <SinglePieceOfDoctrine doctrineKey="landscape" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="noCore" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="ecosystem" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <SinglePieceOfDoctrine doctrineKey="noOneCulture" state={state}
+                                                       callback={this.updateEvaluation}/>
+                            </tr>
+                            <tr>
+                                <SinglePieceOfDoctrine doctrineKey="constantEvolution" state={state}
+                                                       callback={this.updateEvaluation}/>
+                                <td colSpan={3}/>
+                            </tr>
+                            </tbody>
+                        </Table>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col sm={{size: 12}}>
+                        Based on Simon Wardley's work. Learn more at <a
+                        href={"https://learn.wardleymaps.com/"}>https://learn.wardleymaps.com/</a>.
+                    </Col>
+                </Row>
+            </Container>
+        );
+    };
 }
 
 export default App;

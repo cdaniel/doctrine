@@ -2,55 +2,44 @@ import * as React from "react";
 import strings from './strings';
 
 
+const LEF_RED = "#E36B52";
+const LEF_YELLOW = "#EAD065";
+const LEF_GREEN = "#9CE47F";
+
 class SinglePieceOfDoctrine extends React.Component {
 
-    toggleBackground() {
+    render() {
+        let text = strings[this.props.doctrineKey];
 
-        let backgroundColor = this.state.style.backgroundColor;
-        let textShadow = this.state.style.textShadow;
+        let evaluation = 0;
+        if (this.props.state[this.props.doctrineKey]) {
+            evaluation = this.props.state[this.props.doctrineKey].evaluation;
+        }
 
-        let evaluation = this.state.evaluation;
-        evaluation = evaluation + 1;
-        if (evaluation > 3) evaluation = 0;
+        let cellStyle = {};
+        let textStyle = {};
 
         if (evaluation === 1) {
-            backgroundColor = "OrangeRed";
+            cellStyle.backgroundColor = LEF_RED;
+            textStyle.color = 'white';
         } else {
             if (evaluation === 2) {
-                backgroundColor = "Gold";
+                cellStyle.backgroundColor = LEF_YELLOW;
             } else {
                 if (evaluation === 3) {
-                    backgroundColor = "LimeGreen";
+                    cellStyle.backgroundColor = LEF_GREEN;
                 } else {
-                    backgroundColor = null;
+                    cellStyle.backgroundColor = null;
                 }
             }
         }
-        if (!this.props.state[this.props.doctrineKey]) {
-            this.props.state[this.props.doctrineKey] = {evaluation: 0};
+
+        let callback = null;
+        if (this.props.callback) {
+            callback = this.props.callback.bind(this.props.callback.this, this.props.doctrineKey);
         }
-        this.props.state[this.props.doctrineKey].evaluation = evaluation;
-        this.setState({evaluation: evaluation, style: {backgroundColor, textShadow}});
-    }
 
-    constructor(props) {
-        super(props);
-        this.toggleBackground = this.toggleBackground.bind(this);
-        let style = {
-            textShadow: "0 0 1px white",
-            backgroundColor: null
-        };
-        this.state = {evaluation: 0, style};
-    }
-
-
-    render() {
-        let children = this.props.children;
-        let text = strings[this.props.doctrineKey];
-
-        let style = this.state.style;
-
-        return (<td onClick={this.toggleBackground} style={style}><span style={style}>{text}</span></td>);
+        return (<td onClick={callback} style={cellStyle}><span style={textStyle}>{text}</span></td>);
     }
 }
 
