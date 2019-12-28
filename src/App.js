@@ -175,9 +175,9 @@ class App extends React.Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col sm={{size: 12}}>
-                        Based on Simon Wardley's work. Learn more at <a
-                        href={"https://learn.wardleymaps.com/"}>https://learn.wardleymaps.com/</a>.
+                    <Col sm={{size: 12}} style={{textAlign: 'right', fontSize: 'smaller'}}>
+                        <span>Based on Simon Wardley's work. Learn more at <a
+                            href={"https://learn.wardleymaps.com/"}>https://learn.wardleymaps.com/</a>.</span>
                     </Col>
                 </Row>
             </Container>
