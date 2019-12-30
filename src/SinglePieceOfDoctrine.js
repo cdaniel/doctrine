@@ -1,12 +1,18 @@
 import * as React from "react";
 import strings from './strings';
 
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faComments} from '@fortawesome/free-regular-svg-icons';
 
 const LEF_RED = "#E36B52";
 const LEF_YELLOW = "#EAD065";
 const LEF_GREEN = "#9CE47F";
 
 class SinglePieceOfDoctrine extends React.Component {
+
+    stopEventPropagation(e) {
+        e.stopPropagation();
+    }
 
     render() {
         let text = strings[this.props.doctrineKey];
@@ -17,7 +23,9 @@ class SinglePieceOfDoctrine extends React.Component {
         }
 
         let cellStyle = {};
-        let textStyle = {};
+        let textStyle = {
+            flex: 1
+        };
 
         if (evaluation === 1) {
             cellStyle.backgroundColor = LEF_RED;
@@ -39,7 +47,21 @@ class SinglePieceOfDoctrine extends React.Component {
             callback = this.props.callback.bind(this.props.callback.this, this.props.doctrineKey);
         }
 
-        return (<td onClick={callback} style={cellStyle}><span style={textStyle}>{text}</span></td>);
+        let discussion = null;
+        if (this.props.discussion) {
+            discussion = <span style={{float: 'right'}} onClick={this.stopEventPropagation}>
+               <a href={this.props.discussion}>
+                <FontAwesomeIcon icon={faComments}/>
+               </a>
+           </span>;
+        }
+
+        return (<td onClick={callback} style={cellStyle}>
+            <div style={{display: 'flex'}}>
+                <span style={textStyle}>{text}</span>
+                {discussion}
+            </div>
+        </td>);
     }
 }
 
