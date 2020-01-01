@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Col, Container, Nav, Navbar, NavbarBrand, NavItem, NavLink, Row, Table} from 'reactstrap';
+import {Badge, Col, Container, Nav, Navbar, NavbarBrand, NavItem, NavLink, Row, Table} from 'reactstrap';
 import strings from './strings';
 import SinglePieceOfDoctrine from './SinglePieceOfDoctrine';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
@@ -259,7 +259,9 @@ class App extends React.Component {
                     <Row>
                         <Col sm={{size: 12}} style={{textAlign: 'right', fontSize: 'smaller'}}>
                         <span>Based on Simon Wardley's work. Learn more at <a
-                            href={"https://learn.wardleymaps.com/"}>https://learn.wardleymaps.com/</a>.</span>
+                            href={"https://learn.wardleymaps.com/"}>https://learn.wardleymaps.com/</a>.&nbsp;</span>
+                            <span><a href="https://doctrine.wardleymaps.com"><Badge
+                                color="secondary">Fork me on Github!</Badge></a></span>
                         </Col>
                     </Row>
                 </Container>
