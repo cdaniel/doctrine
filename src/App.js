@@ -14,6 +14,15 @@ const logoStyle = {
     marginTop: -5
 };
 
+
+const sectionHeaderStyle = {
+    textAlign: "center",
+    fontSize: '0.9rem'
+}
+
+const doctrineSectionStyle = {
+    fontSize: '0.9rem'
+}
 const state = {};
 
 
@@ -102,7 +111,7 @@ class App extends React.Component {
                                 </NavbarBrand>
                                 <Nav navbar className='rightNav ml-auto'>
                                     <NavItem>
-                                        <NavLink href="#load"><Files
+                                        <NavLink href="#load"  style={{fontSize:'0.9rem'}}><Files
                                             className='files-dropzone'
                                             onChange={this.onFilesChange}
                                             // onError={this.onFilesError}
@@ -117,7 +126,7 @@ class App extends React.Component {
                                         </Files></NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink href="#save" onClick={App.download}><FontAwesomeIcon
+                                        <NavLink href="#save" onClick={App.download}  style={{fontSize:'0.9rem'}}><FontAwesomeIcon
                                             icon={faFileDownload}/>&nbsp;Download</NavLink>
                                     </NavItem>
                                 </Nav>
@@ -129,13 +138,13 @@ class App extends React.Component {
                             <Table bordered responsive size="sm">
                                 <thead>
                                 <tr>
-                                    <th>{strings.category}</th>
-                                    <th colSpan="4" style={{textAlign: "center"}}>{strings.doctrine}</th>
+                                    <th style={doctrineSectionStyle}>{strings.category}</th>
+                                    <th colSpan="4" style={sectionHeaderStyle}>{strings.doctrine}</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <th rowSpan={3} scope="row">{strings.phaseI}</th>
+                                    <th rowSpan={3} scope="row" style={sectionHeaderStyle}>{strings.phaseI}</th>
                                     <SinglePieceOfDoctrine doctrineKey="knowYourUsers" state={state}
                                                            callback={this.updateEvaluation}
                                                            discussion="https://community.wardleymaps.com/t/know-your-users-what-does-it-mean-to-you/565"/>
@@ -164,7 +173,7 @@ class App extends React.Component {
 
 
                                 <tr>
-                                    <th rowSpan={4} scope="row">{strings.phaseII}</th>
+                                    <th rowSpan={4} scope="row" style={sectionHeaderStyle}>{strings.phaseII}</th>
                                     <SinglePieceOfDoctrine doctrineKey="beTransparent" state={state}
                                                            callback={this.updateEvaluation}/>
                                     <SinglePieceOfDoctrine doctrineKey="moveFast" state={state}
@@ -205,7 +214,7 @@ class App extends React.Component {
                                 </tr>
 
                                 <tr>
-                                    <th rowSpan={3} scope="row">{strings.phaseIII}</th>
+                                    <th rowSpan={3} scope="row" style={sectionHeaderStyle}>{strings.phaseIII}</th>
                                     <SinglePieceOfDoctrine doctrineKey="purpose" state={state}
                                                            callback={this.updateEvaluation}/>
                                     <SinglePieceOfDoctrine doctrineKey="exceptionalStandards" state={state}
@@ -237,7 +246,7 @@ class App extends React.Component {
 
 
                                 <tr>
-                                    <th rowSpan={2} scope="row">{strings.phaseIV}</th>
+                                    <th rowSpan={2} scope="row" style={sectionHeaderStyle}>{strings.phaseIV}</th>
                                     <SinglePieceOfDoctrine doctrineKey="landscape" state={state}
                                                            callback={this.updateEvaluation}/>
                                     <SinglePieceOfDoctrine doctrineKey="noCore" state={state}

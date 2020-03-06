@@ -4,9 +4,9 @@ import strings from './strings';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faComments} from '@fortawesome/free-regular-svg-icons';
 
-const LEF_RED = "#E36B52";
-const LEF_YELLOW = "#EAD065";
-const LEF_GREEN = "#9CE47F";
+const LEF_RED = "#EB5E5E"; //alt B71928
+const LEF_YELLOW = "#E7E568";
+const LEF_GREEN = "#459B47";
 
 class SinglePieceOfDoctrine extends React.Component {
 
@@ -24,7 +24,8 @@ class SinglePieceOfDoctrine extends React.Component {
 
         let cellStyle = {};
         let textStyle = {
-            flex: 1
+            flex: 1,
+            fontSize: '0.9rem'
         };
 
         if (evaluation === 1) {
@@ -36,6 +37,7 @@ class SinglePieceOfDoctrine extends React.Component {
             } else {
                 if (evaluation === 3) {
                     cellStyle.backgroundColor = LEF_GREEN;
+                    textStyle.color = 'white';
                 } else {
                     cellStyle.backgroundColor = null;
                 }
