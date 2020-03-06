@@ -159,7 +159,8 @@ class App extends React.Component {
                                     <SinglePieceOfDoctrine doctrineKey="challenge" state={state}
                                                            callback={this.updateEvaluation}/>
                                     <SinglePieceOfDoctrine doctrineKey="focusOnUserNeeds" state={state}
-                                                           callback={this.updateEvaluation}/>
+                                                           callback={this.updateEvaluation}
+                                                           discussion="https://community.wardleymaps.com/t/know-your-users-what-does-it-mean-to-you/565"/>
                                     <SinglePieceOfDoctrine doctrineKey="removeBiasAndDuplication" state={state}
                                                            callback={this.updateEvaluation}/>
                                     <SinglePieceOfDoctrine doctrineKey="thinkSmallDetails" state={state}
