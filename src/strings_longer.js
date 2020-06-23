@@ -8,6 +8,13 @@ let strings = new LocalizedStrings({
         category: "Category",
         doctrine: "Wardley's Doctrine (universally useful patterns that a user can apply)",
 
+        communication: "Communication",
+        development: "Development",
+        operation: "Operation",
+        learning: "Learning",
+        leading: "Leading",
+        structure: "Structure",
+
         phaseI: "Phase I",
         knowYourUsers: "Know your users (e.g. customers, shareholders, regulators, staff)",
         systematicLearning: "Use a systematic mechanism of learning (a bias towards data)",
@@ -37,8 +44,8 @@ let strings = new LocalizedStrings({
         distributePower: "Distribute power and decision making",
 
         phaseIII: "Phase III",
-        purpose: "Provide purpose, mastery, autonomy",
-        exceptionalStandards: "Set exceptional standards (great is jut not good enough)",
+        purpose: "Provide purpose, mastery & autonomy",
+        exceptionalStandards: "Set exceptional standards (great is just not good enough)",
         direction: "Commit to the direction, be adaptive along the path (crossing the river by feeling the stones)",
         biasTowardsNew: "A bias towards the new (be curious, take appropriate risks)",
         betterWithLess: "Do better with less (continual improvement)",
@@ -46,7 +53,7 @@ let strings = new LocalizedStrings({
         thinkBig: "Think big (inspire others, provide direction)",
         beHumble: "Be humble (listen, be selfless, have fortitude)",
         beOwner: "Be the owner (take responsibility)",
-        complexStrategy: "Strategy is complex (there will be uncertainty)",
+        complexStrategy: "Strategy is complex (embrace uncertainty)",
         seekTheBest: "Seek the best",
 
         phaseIV: "Phase IV",
