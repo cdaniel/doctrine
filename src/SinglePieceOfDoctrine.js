@@ -17,15 +17,21 @@ class SinglePieceOfDoctrine extends React.Component {
     render() {
         let text = strings[this.props.doctrineKey];
 
+        let rowSpan = this.props.rowSpan;
+        let colSpan = this.props.colSpan;
+
         let evaluation = 0;
         if (this.props.state[this.props.doctrineKey]) {
             evaluation = this.props.state[this.props.doctrineKey].evaluation;
         }
 
-        let cellStyle = {};
+        let cellStyle = {
+            'text-align': 'center',
+            'vertical-align': 'middle'
+        };
         let textStyle = {
             flex: 1,
-            fontSize: '0.9rem'
+            fontSize: '0.9rem',
         };
 
         if (evaluation === 1) {
@@ -58,7 +64,7 @@ class SinglePieceOfDoctrine extends React.Component {
            </span>;
         }
 
-        return (<td onClick={callback} style={cellStyle}>
+        return (<td onClick={callback} style={cellStyle} rowSpan={rowSpan} colSpan={colSpan}>
             <div style={{display: 'flex'}}>
                 <span style={textStyle}>{text}</span>
                 {discussion}
@@ -68,3 +74,5 @@ class SinglePieceOfDoctrine extends React.Component {
 }
 
 export default SinglePieceOfDoctrine;
+
+// <!-- , verticalAlign: 'middle', textAlign: 'center' -->
