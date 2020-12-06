@@ -1,6 +1,6 @@
 import * as React from "react";
 import strings from './strings_longer';
-import {UncontrolledPopover,Popover, PopoverHeader, PopoverBody} from 'reactstrap';
+import {Popover, PopoverHeader, PopoverBody} from 'reactstrap';
 import './popover.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faComments} from '@fortawesome/free-regular-svg-icons';
