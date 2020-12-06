@@ -315,7 +315,7 @@ class App extends React.Component {
                     </Row>
                     <Row>
                         <Col sm={{size: 12}} style={{textAlign: 'right', fontSize: 'smaller'}}>
-                        <span>Based on Simon Wardley's work. Learn more at <a
+                        <span>Based on Simon Wardley's work and <a href={"https://wardleypedia.org/mediawiki/index.php/Doctrine_Patterns"}>Wardleypedia</a>. Learn more at <a
                             href={"https://learn.wardleymaps.com/"}>https://learn.wardleymaps.com/</a>.&nbsp;</span>
                             <span><a href="https://github.com/cdaniel/doctrine/"><Badge
                                 color="secondary">Fork me on Github!</Badge></a></span>

@@ -1,6 +1,7 @@
 import * as React from "react";
-import strings from './strings';
-
+import strings from './strings_longer';
+import {UncontrolledPopover,Popover, PopoverHeader, PopoverBody} from 'reactstrap';
+import './popover.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faComments} from '@fortawesome/free-regular-svg-icons';
 
@@ -14,8 +15,29 @@ class SinglePieceOfDoctrine extends React.Component {
         e.stopPropagation();
     }
 
+    toggleHover() {
+      let hover = false;
+      if(this.state){
+        hover = this.state.hover;
+      }
+       this.setState({hover : !hover});
+    }
+    enableHover(){
+      this.setState({hover:true});
+    }
+    disableHover(){
+      this.setState({hover:false});
+    }
+    constructor() {
+        super();
+        this.setState({hover : false});
+        this.toggleHover = this.toggleHover.bind(this);
+        this.enableHover = this.enableHover.bind(this);
+        this.disableHover = this.disableHover.bind(this);
+    }
+
     render() {
-        let text = strings[this.props.doctrineKey];
+        let text = strings[this.props.doctrineKey].mainText || strings[this.props.doctrineKey];
 
         let rowSpan = this.props.rowSpan;
         let colSpan = this.props.colSpan;
@@ -64,11 +86,36 @@ class SinglePieceOfDoctrine extends React.Component {
            </span>;
         }
 
-        return (<td onClick={callback} style={cellStyle} rowSpan={rowSpan} colSpan={colSpan}>
-            <div style={{display: 'flex'}}>
+        let hover = false;
+        if(this.state){
+          hover = this.state.hover;
+        }
+
+        let explanations = [];
+        if(strings[this.props.doctrineKey].explanations){
+          explanations = strings[this.props.doctrineKey].explanations.map(function(cv){
+            return (<li>{cv}</li>);
+          });
+        }
+
+        if(explanations.length === 0){
+          hover = false;
+        }
+
+
+        return (<td onClick={callback} style={cellStyle} rowSpan={rowSpan} colSpan={colSpan} id={this.props.doctrineKey} onMouseEnter={this.enableHover} onMouseLeave={this.disableHover}>
+            <div style={{display: 'flex', userSelect:'none'}} >
                 <span style={textStyle}>{text}</span>
                 {discussion}
             </div>
+            <Popover placement="bottom" target={this.props.doctrineKey} isOpen={hover} boundariesElement="window">
+              <PopoverHeader>{text}</PopoverHeader>
+              <PopoverBody>
+                <ul>
+                  {explanations}
+                </ul>
+              </PopoverBody>
+            </Popover >
         </td>);
     }
 }

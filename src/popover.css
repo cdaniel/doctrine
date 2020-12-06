@@ -1,0 +1,13 @@
+.widepopover {
+  max-width: 600px;
+  width: auto;
+}
+
+.popover-inner {
+   width: auto !important;
+   max-width:500px !important;
+}
+.popover {
+   width: auto !important;
+   max-width:500px !important;
+}
