@@ -15,25 +15,26 @@ class SinglePieceOfDoctrine extends React.Component {
         e.stopPropagation();
     }
 
-    toggleHover() {
-      let hover = false;
-      if(this.state){
-        hover = this.state.hover;
-      }
-       this.setState({hover : !hover});
+    doToggleHover(){
+        let hover = false;
+        if(this.state){
+            hover = this.state.hover;
+        }
+        this.setState({hover : !hover});
     }
     enableHover(){
-      this.setState({hover:true});
+        this.clickHoldTimer = setTimeout(this.doToggleHover, 1500);
     }
     disableHover(){
       this.setState({hover:false});
+        clearTimeout(this.clickHoldTimer);
     }
     constructor() {
         super();
         this.setState({hover : false});
-        this.toggleHover = this.toggleHover.bind(this);
         this.enableHover = this.enableHover.bind(this);
         this.disableHover = this.disableHover.bind(this);
+        this.doToggleHover = this.doToggleHover.bind(this);
     }
 
     render() {
