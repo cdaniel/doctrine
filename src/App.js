@@ -51,7 +51,7 @@ class App extends React.Component {
                 "iterativeStrategy", "action", "distributePower", "purpose", "exceptionalStandards",
                 "direction", "biasTowardsNew", "biasTowardsNew", "optimiseFlow", "thinkBig",
                 "beHumble", "beOwner", "complexStrategy", "seekTheBest", "landscape",
-                "noCore", "ecosystem", "noOneCulture", "constantEvolution"
+                "noCore", "ecosystem", "noOneCulture", "constantEvolution", "betterWithLess"
             ];
             categories.forEach((category) => {
                 if (loadedState[category] && loadedState[category].evaluation) {
