@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<td
+  data-testid="commonLanguage"
+  id="commonLanguage"
+  onClick={null}
+  onKeyPress={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  style={
+    Object {
+      "backgroundColor": null,
+      "text-align": "center",
+      "vertical-align": "middle",
+    }
+  }
+  tabindex="0"
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "userSelect": "none",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "flex": 1,
+          "fontSize": "0.9rem",
+        }
+      }
+    >
+      Use a common language (necessary for collaboration)
+    </span>
+  </div>
+</td>
+`;

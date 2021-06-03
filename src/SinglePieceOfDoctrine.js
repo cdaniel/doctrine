@@ -1,6 +1,6 @@
 import * as React from "react";
 import strings from './strings_longer';
-import {Popover, PopoverHeader, PopoverBody} from 'reactstrap';
+import {Popover, PopoverBody, PopoverHeader} from 'reactstrap';
 import './popover.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faComments} from '@fortawesome/free-regular-svg-icons';
@@ -15,26 +15,51 @@ class SinglePieceOfDoctrine extends React.Component {
         e.stopPropagation();
     }
 
-    doToggleHover(){
+    doToggleHover() {
         let hover = false;
-        if(this.state){
+        if (this.state) {
             hover = this.state.hover;
         }
-        this.setState({hover : !hover});
+        this.setState({hover: !hover});
     }
-    enableHover(){
+
+    enableHover() {
+        this.singlePieceRef.current.focus();
         this.clickHoldTimer = setTimeout(this.doToggleHover, 1500);
     }
-    disableHover(){
-      this.setState({hover:false});
+
+    disableHover() {
+        this.setState({hover: false});
         clearTimeout(this.clickHoldTimer);
     }
-    constructor() {
-        super();
-        this.setState({hover : false});
+
+    constructor(props) {
+        super(props);
         this.enableHover = this.enableHover.bind(this);
         this.disableHover = this.disableHover.bind(this);
         this.doToggleHover = this.doToggleHover.bind(this);
+        this.onKeyPress = this.onKeyPress.bind(this);
+        this.singlePieceRef = React.createRef();
+    }
+
+    componentDidMount() {
+        this.setState({hover: false});
+    }
+
+    componentWillUnmount() {
+        this.setState({mounted: false});
+    }
+
+    onKeyPress(event) {
+        if (event.key === '1') {
+            this.props.callback(this.props.doctrineKey, 1);
+        } else if (event.key === '2') {
+            this.props.callback(this.props.doctrineKey, 2);
+        } else if (event.key === '3') {
+            this.props.callback(this.props.doctrineKey, 3);
+        } else if ((event.key === '4') || (event.key === '0')) {
+            this.props.callback(this.props.doctrineKey, 0);
+        }
     }
 
     render() {
@@ -88,35 +113,53 @@ class SinglePieceOfDoctrine extends React.Component {
         }
 
         let hover = false;
-        if(this.state){
-          hover = this.state.hover;
+        if (this.state) {
+            hover = this.state.hover;
         }
 
         let explanations = [];
-        if(strings[this.props.doctrineKey].explanations){
-          explanations = strings[this.props.doctrineKey].explanations.map(function(cv){
-            return (<li>{cv}</li>);
-          });
-        }
-
-        if(explanations.length === 0){
-          hover = false;
+        if (strings[this.props.doctrineKey].explanations) {
+            explanations = strings[this.props.doctrineKey].explanations.map(function (cv) {
+                return (<li>{cv}</li>);
+            });
         }
 
 
-        return (<td onClick={callback} style={cellStyle} rowSpan={rowSpan} colSpan={colSpan} id={this.props.doctrineKey} onMouseEnter={this.enableHover} onMouseLeave={this.disableHover}>
-            <div style={{display: 'flex', userSelect:'none'}} >
+        let popover = null;
+        if (this.singlePieceRef.current && explanations.length > 0) {
+            popover =
+                <Popover
+                    placement="bottom"
+                    target={this.singlePieceRef.current}
+                    isOpen={hover}
+                    boundariesElement="window"
+                    id={this.props.doctrineKey + "-tooltip"}
+                    container={this.singlePieceRef.current}>
+                    <PopoverHeader>{text}</PopoverHeader>
+                    <PopoverBody>
+                        <ul>
+                            {explanations}
+                        </ul>
+                    </PopoverBody>
+                </Popover>;
+        }
+
+        return (<td onClick={callback}
+                    style={cellStyle}
+                    rowSpan={rowSpan}
+                    colSpan={colSpan}
+                    id={this.props.doctrineKey}
+                    data-testid={this.props.doctrineKey}
+                    ref={this.singlePieceRef}
+                    onMouseEnter={this.enableHover}
+                    onMouseLeave={this.disableHover}
+                    onKeyPress={this.onKeyPress}
+                    tabindex="0">
+            <div style={{display: 'flex', userSelect: 'none'}}>
                 <span style={textStyle}>{text}</span>
                 {discussion}
             </div>
-            <Popover placement="bottom" target={this.props.doctrineKey} isOpen={hover} boundariesElement="window">
-              <PopoverHeader>{text}</PopoverHeader>
-              <PopoverBody>
-                <ul>
-                  {explanations}
-                </ul>
-              </PopoverBody>
-            </Popover >
+            {popover}
         </td>);
     }
 }

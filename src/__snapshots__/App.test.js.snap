@@ -1,0 +1,1931 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-12"
+    >
+      <nav
+        className="navbar navbar-expand-md navbar-light bg-light"
+      >
+        <a
+          className="navbar-brand"
+          href="/"
+        >
+          <img
+            alt="Home"
+            src="/leflogo.svg"
+            style={
+              Object {
+                "height": 30,
+                "marginTop": -5,
+              }
+            }
+          />
+        </a>
+        <ul
+          className="rightNav ml-auto navbar-nav"
+        >
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link"
+              href="#load"
+              onClick={[Function]}
+              style={
+                Object {
+                  "fontSize": "0.9rem",
+                }
+              }
+            >
+              <div>
+                <input
+                  accept="application/json,.json"
+                  multiple={false}
+                  name="file"
+                  onChange={[Function]}
+                  style={
+                    Object {
+                      "display": "none",
+                    }
+                  }
+                  type="file"
+                />
+                <div
+                  className="files-dropzone"
+                  onClick={[Function]}
+                  onDragEnter={[Function]}
+                  onDragLeave={[Function]}
+                  onDragOver={[Function]}
+                  onDrop={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-file-upload fa-w-12 "
+                    data-icon="file-upload"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 384 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm65.18 216.01H224v80c0 8.84-7.16 16-16 16h-32c-8.84 0-16-7.16-16-16v-80H94.82c-14.28 0-21.41-17.29-11.27-27.36l96.42-95.7c6.65-6.61 17.39-6.61 24.04 0l96.42 95.7c10.15 10.07 3.03 27.36-11.25 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                   Load
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link"
+              href="#save"
+              onClick={[Function]}
+              style={
+                Object {
+                  "fontSize": "0.9rem",
+                }
+              }
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-file-download fa-w-12 "
+                data-icon="file-download"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 384 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+               Download
+            </a>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link"
+              href="#save"
+              onClick={[Function]}
+              style={
+                Object {
+                  "fontSize": "0.9rem",
+                }
+              }
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-file-download fa-w-12 "
+                data-icon="file-download"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 384 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+               Export as PNG
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-12"
+    >
+      <div>
+        <div
+          className="table-responsive"
+        >
+          <table
+            className="table table-sm table-bordered"
+          >
+            <thead>
+              <tr>
+                <th
+                  style={
+                    Object {
+                      "fontSize": "0.9rem",
+                    }
+                  }
+                >
+                  Category
+                </th>
+                <th
+                  colSpan="6"
+                  style={
+                    Object {
+                      "fontSize": "0.9rem",
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  Wardley's Doctrine (universally useful patterns that a user can apply regardless of context)
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th />
+                <th
+                  style={
+                    Object {
+                      "fontSize": "0.9rem",
+                      "fontStyle": "italic",
+                      "textAlign": "right",
+                    }
+                  }
+                >
+                  Communication
+                </th>
+                <th
+                  style={
+                    Object {
+                      "fontSize": "0.9rem",
+                      "fontStyle": "italic",
+                      "textAlign": "right",
+                    }
+                  }
+                >
+                  Development
+                </th>
+                <th
+                  style={
+                    Object {
+                      "fontSize": "0.9rem",
+                      "fontStyle": "italic",
+                      "textAlign": "right",
+                    }
+                  }
+                >
+                  Operation
+                </th>
+                <th
+                  style={
+                    Object {
+                      "fontSize": "0.9rem",
+                      "fontStyle": "italic",
+                      "textAlign": "right",
+                    }
+                  }
+                >
+                  Learning
+                </th>
+                <th
+                  style={
+                    Object {
+                      "fontSize": "0.9rem",
+                      "fontStyle": "italic",
+                      "textAlign": "right",
+                    }
+                  }
+                >
+                  Leading
+                </th>
+                <th
+                  style={
+                    Object {
+                      "fontSize": "0.9rem",
+                      "fontStyle": "italic",
+                      "textAlign": "right",
+                    }
+                  }
+                >
+                  Structure
+                </th>
+              </tr>
+              <tr>
+                <th
+                  rowSpan={4}
+                  scope="row"
+                  style={
+                    Object {
+                      "fontSize": "0.9rem",
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  Phase I
+                </th>
+                <td
+                  data-testid="commonLanguage"
+                  id="commonLanguage"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Use a common language (necessary for collaboration)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="knowYourUsers"
+                  id="knowYourUsers"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Know your users (e.g. customers, shareholders, regulators, staff)
+                    </span>
+                    <span
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "float": "right",
+                        }
+                      }
+                    >
+                      <a
+                        href="https://community.wardleymaps.com/t/know-your-users-what-does-it-mean-to-you/565"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="svg-inline--fa fa-comments fa-w-18 "
+                          data-icon="comments"
+                          data-prefix="far"
+                          focusable="false"
+                          role="img"
+                          style={Object {}}
+                          viewBox="0 0 576 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M532 386.2c27.5-27.1 44-61.1 44-98.2 0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32 93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2-15.3 30.7-37.3 54.5-37.7 54.9-6.3 6.7-8.1 16.5-4.4 25 3.6 8.5 12 14 21.2 14 53.5 0 96.7-20.2 125.2-38.8 9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14 3.6-8.5 1.9-18.3-4.4-25-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4 2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4 15.5 31.1c2.6 5.1 5.3 10.1 8 14.8-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1-19.9 4.6c-16 3.7-32.5 5.6-49 5.6-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z"
+                            fill="currentColor"
+                            style={Object {}}
+                          />
+                        </svg>
+                      </a>
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="thinkSmallDetails"
+                  id="thinkSmallDetails"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={4}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Think small (as in know the details)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="systematicLearning"
+                  id="systematicLearning"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={4}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Use a systematic mechanism of learning (a bias towards data)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  colSpan={2}
+                  rowSpan={4}
+                />
+              </tr>
+              <tr>
+                <td
+                  data-testid="challenge"
+                  id="challenge"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Challenge assumptions (speak up and question)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="focusOnUserNeeds"
+                  id="focusOnUserNeeds"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Focus on user needs
+                    </span>
+                    <span
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "float": "right",
+                        }
+                      }
+                    >
+                      <a
+                        href="https://community.wardleymaps.com/t/know-your-users-what-does-it-mean-to-you/565"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="svg-inline--fa fa-comments fa-w-18 "
+                          data-icon="comments"
+                          data-prefix="far"
+                          focusable="false"
+                          role="img"
+                          style={Object {}}
+                          viewBox="0 0 576 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M532 386.2c27.5-27.1 44-61.1 44-98.2 0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32 93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2-15.3 30.7-37.3 54.5-37.7 54.9-6.3 6.7-8.1 16.5-4.4 25 3.6 8.5 12 14 21.2 14 53.5 0 96.7-20.2 125.2-38.8 9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14 3.6-8.5 1.9-18.3-4.4-25-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4 2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4 15.5 31.1c2.6 5.1 5.3 10.1 8 14.8-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1-19.9 4.6c-16 3.7-32.5 5.6-49 5.6-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z"
+                            fill="currentColor"
+                            style={Object {}}
+                          />
+                        </svg>
+                      </a>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  data-testid="highSituationalAwareness"
+                  id="highSituationalAwareness"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={2}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Focus on high situational awareness (understand what is being considered)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="removeBiasAndDuplication"
+                  id="removeBiasAndDuplication"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Remove bias and duplication
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  data-testid="methods"
+                  id="methods"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Use appropriate methods (e.g. agile vs lean vs six sigma)
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th
+                  rowSpan={6}
+                  scope="row"
+                  style={
+                    Object {
+                      "fontSize": "0.9rem",
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  Phase II
+                </th>
+                <td
+                  data-testid="beTransparent"
+                  id="beTransparent"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={2}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Be transparent (a bias towards open)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="focusOutcome"
+                  id="focusOutcome"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Focus on the outcome not a contract (e.f. worth based development)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="manageInertia"
+                  id="manageInertia"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={2}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Manage inertia (e.g. existing practice, political capital, previous investment)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="action"
+                  id="action"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={6}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      A bias towards action (learn by playing the game)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="moveFast"
+                  id="moveFast"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={2}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Move fast (an imperfect plan executed today is better than a perfect plan executed tomorrow)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="thinkSmallTeam"
+                  id="thinkSmallTeam"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={2}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Think small (as in teams)
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  data-testid="thinkFast"
+                  id="thinkFast"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Think fast, inexpensive, restrained and elegant (FIRE, formerly FIST)
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  rowSpan={4}
+                />
+                <td
+                  data-testid="appropriateTools"
+                  id="appropriateTools"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={1}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Use appropriate tools (e.g. mapping, financial models)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="failure"
+                  id="failure"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={2}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Manage failure
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="iterativeStrategy"
+                  id="iterativeStrategy"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={4}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Strategy is iterative not linear (fast reactive cycles)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="distributePower"
+                  id="distributePower"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Distribute power and decision making
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  data-testid="bePragmatic"
+                  id="bePragmatic"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={2}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Be pragmatic (it doesn't matter if the cat is black or white as long as it catches mice)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="thinkAptitudeAndAttitude"
+                  id="thinkAptitudeAndAttitude"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={3}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Think aptitude and attitude
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  data-testid="effectivenessOverEfficiency"
+                  id="effectivenessOverEfficiency"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={2}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Effectiveness over efficiency
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  data-testid="standards"
+                  id="standards"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Use standards where appropriate
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th
+                  rowSpan={5}
+                  scope="row"
+                  style={
+                    Object {
+                      "fontSize": "0.9rem",
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  Phase III
+                </th>
+                <td
+                  colSpan={2}
+                  rowSpan={5}
+                />
+                <td
+                  data-testid="optimiseFlow"
+                  id="optimiseFlow"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Optimise flow (remove bottlenecks)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="biasTowardsNew"
+                  id="biasTowardsNew"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={5}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      A bias towards the new (be curious, take appropriate risks)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="direction"
+                  id="direction"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Commit to the direction, be adaptive along the path (crossing the river by feeling the stones)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="purpose"
+                  id="purpose"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={2}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Provide purpose, mastery & autonomy
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  data-testid="betterWithLess"
+                  id="betterWithLess"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={2}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Do better with less (continual improvement)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="beOwner"
+                  id="beOwner"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Be the owner (take responsibility)
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  data-testid="thinkBig"
+                  id="thinkBig"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Think big (inspire others, provide direction)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="seekTheBest"
+                  id="seekTheBest"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={3}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Seek the best
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  data-testid="exceptionalStandards"
+                  id="exceptionalStandards"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={2}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Set exceptional standards (great is just not good enough)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="complexStrategy"
+                  id="complexStrategy"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Strategy is complex (embrace uncertainty)
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  data-testid="beHumble"
+                  id="beHumble"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Be humble (listen, be selfless, have fortitude)
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th
+                  rowSpan={2}
+                  scope="row"
+                  style={
+                    Object {
+                      "fontSize": "0.9rem",
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  Phase IV
+                </th>
+                <td
+                  colSpan={3}
+                  rowSpan={2}
+                />
+                <td
+                  data-testid="ecosystem"
+                  id="ecosystem"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  rowSpan={2}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Listen to your ecosystem (acts as a future sensing engine)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="landscape"
+                  id="landscape"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Exploit the landscape
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="noOneCulture"
+                  id="noOneCulture"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      There is no one culture (e.g. pioneers, settlers and town planners)
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  data-testid="noCore"
+                  id="noCore"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      There is no core (everything is transient)
+                    </span>
+                  </div>
+                </td>
+                <td
+                  data-testid="constantEvolution"
+                  id="constantEvolution"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": null,
+                      "text-align": "center",
+                      "vertical-align": "middle",
+                    }
+                  }
+                  tabindex="0"
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "userSelect": "none",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flex": 1,
+                          "fontSize": "0.9rem",
+                        }
+                      }
+                    >
+                      Design for constant evolution
+                    </span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-12"
+      style={
+        Object {
+          "fontSize": "smaller",
+          "textAlign": "right",
+        }
+      }
+    >
+      <span>
+        Based on Simon Wardley's work and 
+        <a
+          href="https://wardleypedia.org/mediawiki/index.php/Doctrine_Patterns"
+        >
+          Wardleypedia
+        </a>
+        . Learn more at 
+        <a
+          href="https://learn.wardleymaps.com/"
+        >
+          https://learn.wardleymaps.com/
+        </a>
+        . 
+      </span>
+      <span>
+        <a
+          href="https://github.com/cdaniel/doctrine/"
+        >
+          <span
+            className="badge badge-secondary"
+          >
+            Fork me on Github!
+          </span>
+        </a>
+      </span>
+    </div>
+  </div>
+</div>
+`;

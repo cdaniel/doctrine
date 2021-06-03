@@ -2,6 +2,7 @@
 
 A very simple tool for visualising how competitive is the company in the light of Simon Wardley's Doctrine.
 
+You can navigate using ```Tab``` and use keys ```1```,```2``` & ```3``` to change your evaluation.
 
 ---
 

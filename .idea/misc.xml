@@ -3,4 +3,7 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="JSX" />
   </component>
+  <component name="WebPackConfiguration">
+    <option name="mode" value="DISABLED" />
+  </component>
 </project>

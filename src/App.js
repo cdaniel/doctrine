@@ -73,22 +73,22 @@ class App extends React.Component {
     }
 
     downloadPng() {
-		html2canvas(this.tableRef.current).then(canvas => {
-			const base64image = canvas.toDataURL('image/png');
-			const link = document.createElement('a');
-			link.download = 'Doctrine';
-			link.href = base64image;
-			link.click();
-		});
-	}
+        html2canvas(this.tableRef.current).then(canvas => {
+            const base64image = canvas.toDataURL('image/png');
+            const link = document.createElement('a');
+            link.download = 'Doctrine';
+            link.href = base64image;
+            link.click();
+        });
+    }
 
-    updateEvaluation(key) {
+    updateEvaluation(key, goal) {
         if (!state[key]) {
             state[key] = {
-                evaluation: 1
+                evaluation: goal.nativeEvent ? 1 : goal
             }
         } else {
-            state[key].evaluation = (state[key].evaluation + 1) % 4;
+            state[key].evaluation = goal.nativeEvent ? (state[key].evaluation + 1) % 4 : goal;
         }
         this.forceUpdate();
     };
