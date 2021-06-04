@@ -21,12 +21,9 @@ test('render regular piece of doctrine', () => {
 });
 
 test('check tooltip appearing', () => {
-    jest.useFakeTimers();
     const baseDom = render(<SinglePieceOfDoctrine doctrineKey="commonLanguage" state={{}}/>);
 
-    fireEvent.mouseEnter(baseDom.getByTestId("commonLanguage"));
-
-    jest.runOnlyPendingTimers();
+    fireEvent.keyDown(baseDom.getByTestId("commonLanguage"), {key: 'h'});
 
     expect(
         baseDom.getByText(strings.commonLanguage.explanations[0])

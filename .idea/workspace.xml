@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fc77da2-5b16-414f-b90c-50bbb087a807" name="Default Changelist" comment="initial version">
-      <change afterPath="$PROJECT_DIR$/src/SinglePieceOfDoctrine.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9fc77da2-5b16-414f-b90c-50bbb087a807" name="Default Changelist" comment="added some tests&#10;added some basic key bindings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SinglePieceOfDoctrine.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SinglePieceOfDoctrine.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SinglePieceOfDoctrine.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SinglePieceOfDoctrine.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__snapshots__/App.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/__snapshots__/App.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__snapshots__/SinglePieceOfDoctrine.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/__snapshots__/SinglePieceOfDoctrine.test.js.snap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +94,10 @@
       <workItem from="1577536651179" duration="910000" />
       <workItem from="1592910430654" duration="14838000" />
       <workItem from="1622720161604" duration="596000" />
-      <workItem from="1622720780416" duration="10502000" />
+      <workItem from="1622720780416" duration="11608000" />
+      <workItem from="1622791745398" duration="321000" />
+      <workItem from="1622806202376" duration="718000" />
+      <workItem from="1622813263980" duration="691000" />
     </task>
     <task id="LOCAL-00001" summary="initial version">
       <created>1576941747874</created>
@@ -114,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576941821887</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added some tests&#10;added some basic key bindings">
+      <created>1622750478249</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622750478249</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,10 +136,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial version" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial version" />
+    <MESSAGE value="added some tests&#10;added some basic key bindings" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some tests&#10;added some basic key bindings" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

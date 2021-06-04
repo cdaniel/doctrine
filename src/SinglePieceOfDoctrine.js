@@ -25,12 +25,10 @@ class SinglePieceOfDoctrine extends React.Component {
 
     enableHover() {
         this.singlePieceRef.current.focus();
-        this.clickHoldTimer = setTimeout(this.doToggleHover, 1500);
     }
 
     disableHover() {
         this.setState({hover: false});
-        clearTimeout(this.clickHoldTimer);
     }
 
     constructor(props) {
@@ -38,7 +36,7 @@ class SinglePieceOfDoctrine extends React.Component {
         this.enableHover = this.enableHover.bind(this);
         this.disableHover = this.disableHover.bind(this);
         this.doToggleHover = this.doToggleHover.bind(this);
-        this.onKeyPress = this.onKeyPress.bind(this);
+        this.onKeyDown = this.onKeyDown.bind(this);
         this.singlePieceRef = React.createRef();
     }
 
@@ -50,7 +48,8 @@ class SinglePieceOfDoctrine extends React.Component {
         this.setState({mounted: false});
     }
 
-    onKeyPress(event) {
+    onKeyDown(event) {
+        console.log(event.key);
         if (event.key === '1') {
             this.props.callback(this.props.doctrineKey, 1);
         } else if (event.key === '2') {
@@ -59,6 +58,10 @@ class SinglePieceOfDoctrine extends React.Component {
             this.props.callback(this.props.doctrineKey, 3);
         } else if ((event.key === '4') || (event.key === '0')) {
             this.props.callback(this.props.doctrineKey, 0);
+        } else if ((event.key === '?') || (event.key === 'h')) {
+            this.doToggleHover();
+        } else if (event.keyCode === 27) { //esc
+            this.setState({hover: false});
         }
     }
 
@@ -153,7 +156,7 @@ class SinglePieceOfDoctrine extends React.Component {
                     ref={this.singlePieceRef}
                     onMouseEnter={this.enableHover}
                     onMouseLeave={this.disableHover}
-                    onKeyPress={this.onKeyPress}
+                    onKeyDown={this.onKeyDown}
                     tabindex="0">
             <div style={{display: 'flex', userSelect: 'none'}}>
                 <span style={textStyle}>{text}</span>
