@@ -40,7 +40,7 @@ exports[`renders correctly 1`] = `
               onClick={[Function]}
               style={
                 Object {
-                  "fontSize": "0.9rem",
+                  "fontSize": "small",
                 }
               }
             >
@@ -96,7 +96,7 @@ exports[`renders correctly 1`] = `
               onClick={[Function]}
               style={
                 Object {
-                  "fontSize": "0.9rem",
+                  "fontSize": "small",
                 }
               }
             >
@@ -129,7 +129,7 @@ exports[`renders correctly 1`] = `
               onClick={[Function]}
               style={
                 Object {
-                  "fontSize": "0.9rem",
+                  "fontSize": "small",
                 }
               }
             >
@@ -175,7 +175,7 @@ exports[`renders correctly 1`] = `
                 <th
                   style={
                     Object {
-                      "fontSize": "0.9rem",
+                      "fontSize": "small",
                     }
                   }
                 >
@@ -185,7 +185,7 @@ exports[`renders correctly 1`] = `
                   colSpan="6"
                   style={
                     Object {
-                      "fontSize": "0.9rem",
+                      "fontSize": "small",
                       "textAlign": "center",
                     }
                   }
@@ -200,7 +200,7 @@ exports[`renders correctly 1`] = `
                 <th
                   style={
                     Object {
-                      "fontSize": "0.9rem",
+                      "fontSize": "small",
                       "fontStyle": "italic",
                       "textAlign": "right",
                     }
@@ -211,7 +211,7 @@ exports[`renders correctly 1`] = `
                 <th
                   style={
                     Object {
-                      "fontSize": "0.9rem",
+                      "fontSize": "small",
                       "fontStyle": "italic",
                       "textAlign": "right",
                     }
@@ -222,7 +222,7 @@ exports[`renders correctly 1`] = `
                 <th
                   style={
                     Object {
-                      "fontSize": "0.9rem",
+                      "fontSize": "small",
                       "fontStyle": "italic",
                       "textAlign": "right",
                     }
@@ -233,7 +233,7 @@ exports[`renders correctly 1`] = `
                 <th
                   style={
                     Object {
-                      "fontSize": "0.9rem",
+                      "fontSize": "small",
                       "fontStyle": "italic",
                       "textAlign": "right",
                     }
@@ -244,7 +244,7 @@ exports[`renders correctly 1`] = `
                 <th
                   style={
                     Object {
-                      "fontSize": "0.9rem",
+                      "fontSize": "small",
                       "fontStyle": "italic",
                       "textAlign": "right",
                     }
@@ -255,7 +255,7 @@ exports[`renders correctly 1`] = `
                 <th
                   style={
                     Object {
-                      "fontSize": "0.9rem",
+                      "fontSize": "small",
                       "fontStyle": "italic",
                       "textAlign": "right",
                     }
@@ -270,7 +270,7 @@ exports[`renders correctly 1`] = `
                   scope="row"
                   style={
                     Object {
-                      "fontSize": "0.9rem",
+                      "fontSize": "small",
                       "textAlign": "center",
                     }
                   }
@@ -305,7 +305,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -341,7 +341,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -408,7 +408,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -445,7 +445,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -487,7 +487,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -523,7 +523,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -592,7 +592,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -628,7 +628,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -666,7 +666,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -681,7 +681,7 @@ exports[`renders correctly 1`] = `
                   scope="row"
                   style={
                     Object {
-                      "fontSize": "0.9rem",
+                      "fontSize": "small",
                       "textAlign": "center",
                     }
                   }
@@ -717,7 +717,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -753,7 +753,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -790,7 +790,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -827,7 +827,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -864,7 +864,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -901,7 +901,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -939,7 +939,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -981,7 +981,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1018,7 +1018,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1055,7 +1055,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1091,7 +1091,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1130,7 +1130,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1167,7 +1167,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1206,7 +1206,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1244,7 +1244,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1259,7 +1259,7 @@ exports[`renders correctly 1`] = `
                   scope="row"
                   style={
                     Object {
-                      "fontSize": "0.9rem",
+                      "fontSize": "small",
                       "textAlign": "center",
                     }
                   }
@@ -1298,7 +1298,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1335,7 +1335,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1371,7 +1371,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1408,7 +1408,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1447,7 +1447,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1483,7 +1483,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1521,7 +1521,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1558,7 +1558,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1597,7 +1597,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1633,7 +1633,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1671,7 +1671,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1686,7 +1686,7 @@ exports[`renders correctly 1`] = `
                   scope="row"
                   style={
                     Object {
-                      "fontSize": "0.9rem",
+                      "fontSize": "small",
                       "textAlign": "center",
                     }
                   }
@@ -1726,7 +1726,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1762,7 +1762,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1798,7 +1798,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1836,7 +1836,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >
@@ -1872,7 +1872,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "flex": 1,
-                          "fontSize": "0.9rem",
+                          "fontSize": "small",
                         }
                       }
                     >

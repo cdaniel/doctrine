@@ -9,6 +9,7 @@ import Files from 'react-files';
 import HttpsRedirect from 'react-https-redirect';
 import html2canvas from 'html2canvas';
 
+
 const logoStyle = {
     height: 30,
     marginTop: -5
@@ -16,15 +17,15 @@ const logoStyle = {
 
 const sectionHeaderStyle = {
     textAlign: "center",
-    fontSize: '0.9rem'
+    fontSize: 'small'
 }
 
 const doctrineSectionStyle = {
-    fontSize: '0.9rem'
+    fontSize: 'small'
 }
 
 const categoryHeaderStyle = {
-    fontSize: '0.9rem',
+    fontSize: 'small',
     textAlign: 'right',
     fontStyle: 'italic'
 }
@@ -128,7 +129,7 @@ class App extends React.Component {
                                 </NavbarBrand>
                                 <Nav navbar className='rightNav ml-auto'>
                                     <NavItem>
-                                        <NavLink href="#load"  style={{fontSize:'0.9rem'}}><Files
+                                        <NavLink href="#load" style={{fontSize: 'small'}}><Files
                                             className='files-dropzone'
                                             onChange={this.onFilesChange}
                                             // onError={this.onFilesError}
@@ -143,11 +144,13 @@ class App extends React.Component {
                                         </Files></NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink href="#save" onClick={this.downlad}  style={{fontSize:'0.9rem'}}><FontAwesomeIcon
+                                        <NavLink href="#save" onClick={this.downlad}
+                                                 style={{fontSize: 'small'}}><FontAwesomeIcon
                                             icon={faFileDownload}/>&nbsp;Download</NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink href="#save" onClick={this.downloadPng}  style={{fontSize:'0.9rem'}}><FontAwesomeIcon
+                                        <NavLink href="#save" onClick={this.downloadPng}
+                                                 style={{fontSize: 'small'}}><FontAwesomeIcon
                                             icon={faFileDownload}/>&nbsp;Export as PNG</NavLink>
                                     </NavItem>
                                 </Nav>

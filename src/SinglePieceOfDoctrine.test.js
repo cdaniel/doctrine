@@ -21,7 +21,7 @@ test('render regular piece of doctrine', () => {
 });
 
 test('check tooltip appearing', () => {
-    const baseDom = render(<SinglePieceOfDoctrine doctrineKey="commonLanguage" state={{}}/>);
+    const baseDom = render(<SinglePieceOfDoctrine doctrineKey="commonLanguage" state={{expanded: true}}/>);
 
     fireEvent.keyDown(baseDom.getByTestId("commonLanguage"), {key: 'h'});
 
