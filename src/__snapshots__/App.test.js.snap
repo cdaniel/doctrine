@@ -13,62 +13,182 @@ exports[`renders correctly 1`] = `
       <nav
         className="navbar navbar-expand-md navbar-light bg-light"
       >
-        <a
-          className="navbar-brand"
-          href="/"
+        <div
+          className="container-fluid"
         >
-          <img
-            alt="Home"
-            src="/leflogo.svg"
-            style={
-              Object {
-                "height": 30,
-                "marginTop": -5,
-              }
-            }
-          />
-        </a>
-        <ul
-          className="rightNav ml-auto navbar-nav"
-        >
-          <li
-            className="nav-item"
+          <a
+            className="navbar-brand"
+            href="/"
           >
-            <a
-              className="nav-link"
-              href="#load"
-              onClick={[Function]}
+            <img
+              alt="Home"
+              src="/dat.png"
               style={
                 Object {
-                  "fontSize": "small",
+                  "height": 50,
                 }
               }
+            />
+          </a>
+          <ul
+            className="rightNav ml-auto navbar-nav"
+          >
+            <li
+              className="nav-item"
             >
-              <div>
-                <input
-                  accept="application/json,.json"
-                  multiple={false}
-                  name="file"
-                  onChange={[Function]}
-                  style={
-                    Object {
-                      "display": "none",
-                    }
+              <a
+                className="nav-link"
+                href="#load"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "fontSize": "small",
                   }
-                  type="file"
-                />
-                <div
-                  className="files-dropzone"
+                }
+              >
+                <div>
+                  <input
+                    accept="application/json,.json"
+                    multiple={false}
+                    name="file"
+                    onChange={[Function]}
+                    style={
+                      Object {
+                        "display": "none",
+                      }
+                    }
+                    type="file"
+                  />
+                  <div
+                    className="files-dropzone"
+                    onClick={[Function]}
+                    onDragEnter={[Function]}
+                    onDragLeave={[Function]}
+                    onDragOver={[Function]}
+                    onDrop={[Function]}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-file-upload fa-w-12 "
+                      data-icon="file-upload"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 384 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm65.18 216.01H224v80c0 8.84-7.16 16-16 16h-32c-8.84 0-16-7.16-16-16v-80H94.82c-14.28 0-21.41-17.29-11.27-27.36l96.42-95.7c6.65-6.61 17.39-6.61 24.04 0l96.42 95.7c10.15 10.07 3.03 27.36-11.25 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                     Load
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#load"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "fontSize": "small",
+                  }
+                }
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-chalkboard fa-w-20 "
+                  data-icon="chalkboard"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 640 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M96 64h448v352h64V40c0-22.06-17.94-40-40-40H72C49.94 0 32 17.94 32 40v376h64V64zm528 384H480v-64H288v64H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h608c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+                 Clear
+              </a>
+            </li>
+            <li
+              className="btn-group nav-item"
+              onKeyDown={[Function]}
+            >
+              <a
+                aria-label={null}
+                className="btn btn-outline"
+                href="#save"
+                inNavbar={true}
+                nav={true}
+                onClick={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-save fa-w-14 "
+                  data-icon="save"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 448 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M433.941 129.941l-83.882-83.882A48 48 0 0 0 316.118 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V163.882a48 48 0 0 0-14.059-33.941zM224 416c-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64s64 28.654 64 64c0 35.346-28.654 64-64 64zm96-304.52V212c0 6.627-5.373 12-12 12H76c-6.627 0-12-5.373-12-12V108c0-6.627 5.373-12 12-12h228.52c3.183 0 6.235 1.264 8.485 3.515l3.48 3.48A11.996 11.996 0 0 1 320 111.48z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+                 Save...
+              </a>
+              <button
+                aria-expanded={false}
+                aria-haspopup={true}
+                aria-label={null}
+                className="dropdown-toggle dropdown-toggle-split btn btn-outline"
+                onClick={[Function]}
+                type="button"
+              >
+                <span
+                  className="visually-hidden"
+                >
+                  Toggle Dropdown
+                </span>
+              </button>
+              <div
+                aria-hidden={true}
+                caret={true}
+                className="dropdown-menu"
+                inNavbar={true}
+                nav={true}
+                role="menu"
+                tabIndex="-1"
+              >
+                <a
+                  className="dropdown-item"
+                  href="#save"
+                  inNavbar={true}
+                  nav={true}
                   onClick={[Function]}
-                  onDragEnter={[Function]}
-                  onDragLeave={[Function]}
-                  onDragOver={[Function]}
-                  onDrop={[Function]}
+                  role="menuitem"
+                  tabIndex="0"
                 >
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-file-upload fa-w-12 "
-                    data-icon="file-upload"
+                    className="svg-inline--fa fa-file-download fa-w-12 "
+                    data-icon="file-download"
                     data-prefix="fas"
                     focusable="false"
                     role="img"
@@ -77,83 +197,79 @@ exports[`renders correctly 1`] = `
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm65.18 216.01H224v80c0 8.84-7.16 16-16 16h-32c-8.84 0-16-7.16-16-16v-80H94.82c-14.28 0-21.41-17.29-11.27-27.36l96.42-95.7c6.65-6.61 17.39-6.61 24.04 0l96.42 95.7c10.15 10.07 3.03 27.36-11.25 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"
+                      d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"
                       fill="currentColor"
                       style={Object {}}
                     />
                   </svg>
-                   Load
-                </div>
+                   Download as JSON file
+                </a>
+                <a
+                  className="dropdown-item"
+                  href="#save"
+                  inNavbar={true}
+                  nav={true}
+                  onClick={[Function]}
+                  role="menuitem"
+                  tabIndex="0"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-file-image fa-w-12 "
+                    data-icon="file-image"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 384 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M384 121.941V128H256V0h6.059a24 24 0 0 1 16.97 7.029l97.941 97.941a24.002 24.002 0 0 1 7.03 16.971zM248 160c-13.2 0-24-10.8-24-24V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248zm-135.455 16c26.51 0 48 21.49 48 48s-21.49 48-48 48-48-21.49-48-48 21.491-48 48-48zm208 240h-256l.485-48.485L104.545 328c4.686-4.686 11.799-4.201 16.485.485L160.545 368 264.06 264.485c4.686-4.686 12.284-4.686 16.971 0L320.545 304v112z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                   Export PNG
+                </a>
               </div>
-            </a>
-          </li>
-          <li
-            className="nav-item"
-          >
-            <a
-              className="nav-link"
-              href="#save"
-              onClick={[Function]}
-              style={
-                Object {
-                  "fontSize": "small",
-                }
-              }
+            </li>
+            <li
+              className="nav-item"
             >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-file-download fa-w-12 "
-                data-icon="file-download"
-                data-prefix="fas"
-                focusable="false"
-                role="img"
-                style={Object {}}
-                viewBox="0 0 384 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </svg>
-               Download
-            </a>
-          </li>
-          <li
-            className="nav-item"
-          >
-            <a
-              className="nav-link"
-              href="#save"
-              onClick={[Function]}
-              style={
-                Object {
-                  "fontSize": "small",
+              <a
+                className="nav-link"
+                href="#help"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "fontSize": "small",
+                  }
                 }
-              }
-            >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-file-download fa-w-12 "
-                data-icon="file-download"
-                data-prefix="fas"
-                focusable="false"
-                role="img"
-                style={Object {}}
-                viewBox="0 0 384 512"
-                xmlns="http://www.w3.org/2000/svg"
+                toggle={[Function]}
               >
-                <path
-                  d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"
-                  fill="currentColor"
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-hands-helping fa-w-20 "
+                  data-icon="hands-helping"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
                   style={Object {}}
-                />
-              </svg>
-               Export as PNG
-            </a>
-          </li>
-        </ul>
+                  viewBox="0 0 640 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M488 192H336v56c0 39.7-32.3 72-72 72s-72-32.3-72-72V126.4l-64.9 39C107.8 176.9 96 197.8 96 220.2v47.3l-80 46.2C.7 322.5-4.6 342.1 4.3 357.4l80 138.6c8.8 15.3 28.4 20.5 43.7 11.7L231.4 448H368c35.3 0 64-28.7 64-64h16c17.7 0 32-14.3 32-32v-64h8c13.3 0 24-10.7 24-24v-48c0-13.3-10.7-24-24-24zm147.7-37.4L555.7 16C546.9.7 527.3-4.5 512 4.3L408.6 64H306.4c-12 0-23.7 3.4-33.9 9.7L239 94.6c-9.4 5.8-15 16.1-15 27.1V248c0 22.1 17.9 40 40 40s40-17.9 40-40v-88h184c30.9 0 56 25.1 56 56v28.5l80-46.2c15.3-8.9 20.5-28.4 11.7-43.7z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+                 Help
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </div>
@@ -168,10 +284,16 @@ exports[`renders correctly 1`] = `
           className="table-responsive"
         >
           <table
-            className="table table-sm table-bordered"
+            className="table table-sm"
           >
             <thead>
-              <tr>
+              <tr
+                style={
+                  Object {
+                    "backgroundColor": "",
+                  }
+                }
+              >
                 <th
                   style={
                     Object {
@@ -195,7 +317,13 @@ exports[`renders correctly 1`] = `
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr
+                style={
+                  Object {
+                    "backgroundColor": "",
+                  }
+                }
+              >
                 <th />
                 <th
                   style={
@@ -1919,7 +2047,7 @@ exports[`renders correctly 1`] = `
           href="https://github.com/cdaniel/doctrine/"
         >
           <span
-            className="badge badge-secondary"
+            className="badge bg-secondary"
           >
             Fork me on Github!
           </span>

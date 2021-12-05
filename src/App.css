@@ -1,3 +1,7 @@
 .App {
     text-align: center;
 }
+
+.pendingSave {
+    color: red;
+}

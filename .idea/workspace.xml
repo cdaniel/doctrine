@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fc77da2-5b16-414f-b90c-50bbb087a807" name="Default Changelist" comment="added some tests&#10;added some basic key bindings">
+    <list default="true" id="9fc77da2-5b16-414f-b90c-50bbb087a807" name="Default Changelist" comment="Improve interactions.&#10;&#10;The tooltip emerges only on click, and has buttons.">
+      <change afterPath="$PROJECT_DIR$/public/InitialClick.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/worse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HelpSystem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dat.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SinglePieceOfDoctrine.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SinglePieceOfDoctrine.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SinglePieceOfDoctrine.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SinglePieceOfDoctrine.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/leflogo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/__snapshots__/App.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/__snapshots__/App.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__snapshots__/SinglePieceOfDoctrine.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/__snapshots__/SinglePieceOfDoctrine.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +39,13 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/SinglePieceOfDoctrine.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/App.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/popover.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/index.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/App.css" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="38" />
     <option name="y" value="142" />
@@ -48,7 +66,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -59,15 +77,19 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\krzys\WebstormProjects\doctrine\public" />
+      <recent name="C:\Users\krzys\WebstormProjects\doctrine\src" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\krzys\WebstormProjects\doctrine\public" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
@@ -97,7 +119,15 @@
       <workItem from="1622720780416" duration="11608000" />
       <workItem from="1622791745398" duration="321000" />
       <workItem from="1622806202376" duration="718000" />
-      <workItem from="1622813263980" duration="691000" />
+      <workItem from="1622813263980" duration="792000" />
+      <workItem from="1628853387088" duration="23000" />
+      <workItem from="1628853460115" duration="438000" />
+      <workItem from="1635169265724" duration="632000" />
+      <workItem from="1635522050263" duration="8225000" />
+      <workItem from="1635530465652" duration="254000" />
+      <workItem from="1635537827863" duration="13000" />
+      <workItem from="1637521970655" duration="218000" />
+      <workItem from="1638716637845" duration="20420000" />
     </task>
     <task id="LOCAL-00001" summary="initial version">
       <created>1576941747874</created>
@@ -120,7 +150,28 @@
       <option name="project" value="LOCAL" />
       <updated>1622750478249</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="change tooltips to appear on 'h' or '?'.">
+      <created>1622814040792</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622814040792</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Improve interactions.&#10;&#10;The tooltip emerges only on click, and has buttons.">
+      <created>1635530235819</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1635530235819</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Improve interactions.&#10;&#10;The tooltip emerges only on click, and has buttons.">
+      <created>1635530627364</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1635530627364</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +192,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial version" />
     <MESSAGE value="added some tests&#10;added some basic key bindings" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some tests&#10;added some basic key bindings" />
+    <MESSAGE value="change tooltips to appear on 'h' or '?'." />
+    <MESSAGE value="Improve interactions.&#10;&#10;The tooltip emerges only on click, and has buttons." />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve interactions.&#10;&#10;The tooltip emerges only on click, and has buttons." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
