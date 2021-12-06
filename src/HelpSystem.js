@@ -21,7 +21,7 @@ class HelpSystem extends React.Component {
         let open = this.props.open;
         let toggleHelp = this.props.toggleHelp;
         return (
-            <Modal fullscreen isOpen={open} size={"lg"}>
+            <Modal isOpen={open} size={"lg"}>
                 <ModalHeader toggle={toggleHelp} fullscreen>
                     Help
                 </ModalHeader>
