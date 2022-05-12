@@ -224,9 +224,9 @@ class App extends React.Component {
                                             <FontAwesomeIcon icon={faChalkboard}/>&nbsp;Clear
                                         </NavLink>
                                     </NavItem>
-                                    <NavItem>
-                                        <NavLink href="#save" onClick={this.localSave} color={saveButtonVariant} style={{fontSize: 'small'}}>
-                                            <FontAwesomeIcon icon={faSave}/>&nbsp;Save...
+                                    <NavItem >
+                                        <NavLink href="#save" onClick={this.localSave}  style={{fontSize: 'small'}} active={saveButtonVariant==='warning'}>
+                                            <span> <FontAwesomeIcon icon={faSave}/>&nbsp;Save...</span>
                                         </NavLink>
                                     </NavItem>
                                     <UncontrolledDropdown style={{fontSize: 'small'}}
