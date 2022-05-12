@@ -1,0 +1,7 @@
+{
+    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:16",
+    "forwardPorts": [3000],
+    "extensions": [],
+    "remoteUser": "node",
+    "postCreateCommand": "npm install"
+  }

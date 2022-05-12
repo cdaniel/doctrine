@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import {
+    Alert,
     Badge,
     Button,
     Col,
@@ -15,7 +16,9 @@ import {
     NavLink,
     Row,
     Table,
-    UncontrolledButtonDropdown
+    UncontrolledDropdown,
+    UncontrolledButtonDropdown,
+    UncontrolledAlert 
 } from 'reactstrap';
 import strings from './strings';
 import SinglePieceOfDoctrine from './SinglePieceOfDoctrine';
@@ -221,22 +224,32 @@ class App extends React.Component {
                                             <FontAwesomeIcon icon={faChalkboard}/>&nbsp;Clear
                                         </NavLink>
                                     </NavItem>
-                                    <UncontrolledButtonDropdown nav inNavbar>
-                                        <Button nav inNavbar href="#save" onClick={this.localSave}
-                                                color={saveButtonVariant}>
+                                    <NavItem>
+                                        <NavLink href="#save" onClick={this.localSave} color={saveButtonVariant} style={{fontSize: 'small'}}>
                                             <FontAwesomeIcon icon={faSave}/>&nbsp;Save...
-                                        </Button>
-                                        <DropdownToggle split color={saveButtonVariant}>
+                                        </NavLink>
+                                    </NavItem>
+                                    <UncontrolledDropdown style={{fontSize: 'small'}}
+                                        inNavbar
+                                        nav
+                                        caret
+                                    >
+                                        <DropdownToggle
+                                            caret
+                                            nav
+                                            inNavbar
+                                            split
+                                        >
                                         </DropdownToggle>
-                                        <DropdownMenu caret nav inNavbar>
-                                            <DropdownItem nav inNavbar href="#save" onClick={this.download}>
-                                                <FontAwesomeIcon icon={faFileDownload}/>&nbsp;Download as JSON file
+                                        <DropdownMenu>
+                                            <DropdownItem nav inNavbar href="#save" onClick={this.download}> 
+                                                <span style={{fontSize: 'small'}}><FontAwesomeIcon icon={faFileDownload}/>&nbsp;Download as JSON file</span>
                                             </DropdownItem>
-                                            <DropdownItem nav inNavbar href="#save" onClick={this.downloadPng}>
-                                                <FontAwesomeIcon icon={faFileImage}/>&nbsp;Export PNG
+                                            <DropdownItem nav inNavbar href="#save" onClick={this.downloadPng}> 
+                                            <span style={{fontSize: 'small'}}><FontAwesomeIcon icon={faFileImage}/>&nbsp;Export PNG</span>
                                             </DropdownItem>
                                         </DropdownMenu>
-                                    </UncontrolledButtonDropdown>
+                                    </UncontrolledDropdown>
                                     <NavItem>
                                         <NavLink href="#help" onClick={this.toggleHelp} style={{fontSize: 'small'}}
                                                  toggle={function noRefCheck() {
@@ -246,6 +259,9 @@ class App extends React.Component {
                                     </NavItem>
                                 </Nav>
                             </Navbar>
+                            <UncontrolledAlert color="info">
+                                Learn more about doctrine at  <a className="alert-link" href="https://wardleymaps.com/doctrine">wardleymaps.com/doctrine</a>!
+                            </UncontrolledAlert >
                         </Col>
                     </Row>
                     <Row>
@@ -410,8 +426,7 @@ class App extends React.Component {
                     <Row>
                         <Col sm={{size: 12}} style={{textAlign: 'right', fontSize: 'smaller'}}>
                         <span>Based on Simon Wardley's work and <a
-                            href={"https://wardleypedia.org/mediawiki/index.php/Doctrine_Patterns"}>Wardleypedia</a>. Learn more at <a
-                            href={"https://learn.wardleymaps.com/"}>https://learn.wardleymaps.com/</a>.&nbsp;</span>
+                            href={"https://wardleypedia.org/mediawiki/index.php/Doctrine_Patterns"}>Wardleypedia</a>. </span>
                             <span><a href="https://github.com/cdaniel/doctrine/"><Badge
                                 color="secondary">Fork me on Github!</Badge></a></span>
                         </Col>
