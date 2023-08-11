@@ -20,7 +20,7 @@ import {
     UncontrolledButtonDropdown,
     UncontrolledAlert 
 } from 'reactstrap';
-import strings from './strings';
+import strings from './strings_longer';
 import SinglePieceOfDoctrine from './SinglePieceOfDoctrine';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
@@ -284,88 +284,27 @@ class App extends React.Component {
                                         <th style={categoryHeaderStyle}>{strings.leading}</th>
                                         <th style={categoryHeaderStyle}>{strings.structure}</th>
                                     </tr>
+                                    
                                     <tr>
-                                        <th rowSpan={4} scope="row" style={sectionHeaderStyle}>{strings.phaseI}</th>
-                                            <SinglePieceOfDoctrine doctrineKey="commonLanguage" state={state}
-                                                                   callback={this.updateEvaluation}/>
-                                            <SinglePieceOfDoctrine doctrineKey="knowYourUsers" state={state}
-                                                                   callback={this.updateEvaluation}
-                                                                   discussion="https://community.wardleymaps.com/t/know-your-users-what-does-it-mean-to-you/565"/>
-                                            <SinglePieceOfDoctrine doctrineKey="thinkSmallDetails" state={state}
-                                                                   callback={this.updateEvaluation} rowSpan={4}/>
-                                            <SinglePieceOfDoctrine rowSpan={4} doctrineKey="systematicLearning" state={state}
-                                                                   callback={this.updateEvaluation}/>
-                                        <td colSpan={2} rowSpan={4}/>
-                                    </tr>
-                                    <tr>
-                                        <SinglePieceOfDoctrine doctrineKey="challenge" state={state}
-                                                            callback={this.updateEvaluation}/>
-                                        <SinglePieceOfDoctrine doctrineKey="focusOnUserNeeds" state={state}
-                                                            callback={this.updateEvaluation}
-                                                            discussion="https://community.wardleymaps.com/t/know-your-users-what-does-it-mean-to-you/565"/>
-                                    </tr>
-                                    <tr>
-                                        <SinglePieceOfDoctrine doctrineKey="highSituationalAwareness" state={state} rowSpan={2}
-                                                               callback={this.updateEvaluation}/>
-                                        <SinglePieceOfDoctrine doctrineKey="removeBiasAndDuplication" state={state}
-                                                           callback={this.updateEvaluation}/>
-                                    </tr>
-                                    <tr>
-                                        <SinglePieceOfDoctrine doctrineKey="methods" state={state}
-                                                               callback={this.updateEvaluation}/>
-                                    </tr>
-                                    <tr>
-                                        <th rowSpan={6} scope="row" style={sectionHeaderStyle}>{strings.phaseII}</th>
+                                        <th rowSpan={2} scope="row" style={sectionHeaderStyle}>{strings.phaseIV}</th>
+                                        <td rowSpan={2} colSpan={3}></td>
 
-                                        <SinglePieceOfDoctrine doctrineKey="beTransparent" state={state} rowSpan={2}
-                                                            callback={this.updateEvaluation}/>
-                                        <SinglePieceOfDoctrine doctrineKey="focusOutcome" state={state}
+                                        <SinglePieceOfDoctrine doctrineKey="ecosystem" state={state} rowSpan={2}
                                                                callback={this.updateEvaluation}/>
-                                        <SinglePieceOfDoctrine doctrineKey="manageInertia" state={state} rowSpan={2}
+                                        <SinglePieceOfDoctrine doctrineKey="landscape" state={state}
                                                                callback={this.updateEvaluation}/>
-                                        <SinglePieceOfDoctrine doctrineKey="action" state={state} rowSpan={6}
-                                                               callback={this.updateEvaluation}/>
-                                        <SinglePieceOfDoctrine doctrineKey="moveFast" state={state} rowSpan={2}
-                                                               callback={this.updateEvaluation}/>
-                                        <SinglePieceOfDoctrine doctrineKey="thinkSmallTeam" state={state} rowSpan={2}
+                                        <SinglePieceOfDoctrine doctrineKey="noOneCulture" state={state}
                                                                callback={this.updateEvaluation}/>
                                     </tr>
                                     <tr>
-
-                                        <SinglePieceOfDoctrine doctrineKey="thinkFast" state={state}
+                                        <SinglePieceOfDoctrine doctrineKey="noCore" state={state}
                                                                callback={this.updateEvaluation}/>
-
-                                    </tr>
-                                    <tr>
-                                        <td rowSpan={4}></td>
-
-                                        <SinglePieceOfDoctrine doctrineKey="appropriateTools" state={state} rowSpan={1}
-                                                               callback={this.updateEvaluation}/>
-                                        <SinglePieceOfDoctrine doctrineKey="failure" state={state} rowSpan={2}
-                                                               callback={this.updateEvaluation}/>
-
-                                        <SinglePieceOfDoctrine doctrineKey="iterativeStrategy" state={state} rowSpan={4}
-                                                               callback={this.updateEvaluation}/>
-                                        <SinglePieceOfDoctrine doctrineKey="distributePower" state={state}
+                                        <SinglePieceOfDoctrine doctrineKey="constantEvolution" state={state}
                                                                callback={this.updateEvaluation}/>
                                     </tr>
-                                    <tr>
-                                        <SinglePieceOfDoctrine doctrineKey="bePragmatic" state={state} rowSpan={2}
-                                                               callback={this.updateEvaluation}/>
-                                        <SinglePieceOfDoctrine doctrineKey="thinkAptitudeAndAttitude" state={state} rowSpan={3}
-                                                               callback={this.updateEvaluation}/>
-                                    </tr>
-                                    <tr>
 
-                                        <SinglePieceOfDoctrine doctrineKey="effectivenessOverEfficiency" state={state} rowSpan={2}
-                                                               callback={this.updateEvaluation}/>
 
-                                    </tr>
-                                    <tr>
-                                        <SinglePieceOfDoctrine doctrineKey="standards" state={state}
-                                                               callback={this.updateEvaluation}/>
 
-                                    </tr>
                                     <tr>
                                         <th rowSpan={5} scope="row" style={sectionHeaderStyle}>{strings.phaseIII}</th>
                                         <td colSpan={2} rowSpan={5}></td>
@@ -402,22 +341,94 @@ class App extends React.Component {
                                     </tr>
 
                                     <tr>
-                                        <th rowSpan={2} scope="row" style={sectionHeaderStyle}>{strings.phaseIV}</th>
-                                        <td rowSpan={2} colSpan={3}></td>
+                                        <th rowSpan={6} scope="row" style={sectionHeaderStyle}>{strings.phaseII}</th>
 
-                                        <SinglePieceOfDoctrine doctrineKey="ecosystem" state={state} rowSpan={2}
+                                        <td colSpan={1} rowSpan={5}></td>
+
+                                        
+                                        <SinglePieceOfDoctrine doctrineKey="focusOutcome" state={state}
                                                                callback={this.updateEvaluation}/>
-                                        <SinglePieceOfDoctrine doctrineKey="landscape" state={state}
+                                        <SinglePieceOfDoctrine doctrineKey="manageInertia" state={state} rowSpan={2}
                                                                callback={this.updateEvaluation}/>
-                                        <SinglePieceOfDoctrine doctrineKey="noOneCulture" state={state}
+                                        <SinglePieceOfDoctrine doctrineKey="action" state={state} rowSpan={6}
+                                                               callback={this.updateEvaluation}/>
+                                        <SinglePieceOfDoctrine doctrineKey="moveFast" state={state} rowSpan={2}
+                                                               callback={this.updateEvaluation}/>
+                                        <SinglePieceOfDoctrine doctrineKey="thinkSmallTeam" state={state} rowSpan={2}
                                                                callback={this.updateEvaluation}/>
                                     </tr>
                                     <tr>
-                                        <SinglePieceOfDoctrine doctrineKey="noCore" state={state}
+                                        <SinglePieceOfDoctrine doctrineKey="thinkFast" state={state}
                                                                callback={this.updateEvaluation}/>
-                                        <SinglePieceOfDoctrine doctrineKey="constantEvolution" state={state}
+
+                                    </tr>
+                                    <tr>
+                                        
+
+                                        <SinglePieceOfDoctrine doctrineKey="appropriateTools" state={state} rowSpan={1}
+                                                               callback={this.updateEvaluation}/>
+                                        <SinglePieceOfDoctrine doctrineKey="failure" state={state} rowSpan={2}
+                                                               callback={this.updateEvaluation}/>
+
+                                        <SinglePieceOfDoctrine doctrineKey="iterativeStrategy" state={state} rowSpan={4}
+                                                               callback={this.updateEvaluation}/>
+                                        <SinglePieceOfDoctrine doctrineKey="distributePower" state={state}
                                                                callback={this.updateEvaluation}/>
                                     </tr>
+                                    <tr>
+                                        <SinglePieceOfDoctrine doctrineKey="bePragmatic" state={state} rowSpan={2}
+                                                               callback={this.updateEvaluation}/>
+                                        <SinglePieceOfDoctrine doctrineKey="thinkAptitudeAndAttitude" state={state} rowSpan={3}
+                                                               callback={this.updateEvaluation}/>
+                                    </tr>
+                                    <tr>
+
+                                        <SinglePieceOfDoctrine doctrineKey="effectivenessOverEfficiency" state={state} rowSpan={2}
+                                                               callback={this.updateEvaluation}/>
+
+                                    </tr>
+                                    <tr>
+                                        <SinglePieceOfDoctrine doctrineKey="beTransparent" state={state}
+                                                            callback={this.updateEvaluation}/>
+                                        <SinglePieceOfDoctrine doctrineKey="standards" state={state}
+                                                               callback={this.updateEvaluation}/>
+
+                                    </tr>
+                                    
+
+                                    <tr>
+                                        <th rowSpan={4} scope="row" style={sectionHeaderStyle}>{strings.phaseI}</th>
+                                            <SinglePieceOfDoctrine doctrineKey="commonLanguage" state={state}
+                                                                   callback={this.updateEvaluation}/>
+                                            <SinglePieceOfDoctrine doctrineKey="knowYourUsers" state={state}
+                                                                   callback={this.updateEvaluation}
+                                                                   discussion="https://community.wardleymaps.com/t/know-your-users-what-does-it-mean-to-you/565"/>
+                                            <SinglePieceOfDoctrine doctrineKey="thinkSmallDetails" state={state}
+                                                                   callback={this.updateEvaluation} rowSpan={4}/>
+                                            <SinglePieceOfDoctrine rowSpan={4} doctrineKey="systematicLearning" state={state}
+                                                                   callback={this.updateEvaluation}/>
+                                        <td colSpan={2} rowSpan={4}/>
+                                    </tr>
+                                    <tr>
+                                        <SinglePieceOfDoctrine doctrineKey="challenge" state={state}
+                                                            callback={this.updateEvaluation}/>
+                                        <SinglePieceOfDoctrine doctrineKey="focusOnUserNeeds" state={state}
+                                                            callback={this.updateEvaluation}
+                                                            discussion="https://community.wardleymaps.com/t/know-your-users-what-does-it-mean-to-you/565"/>
+                                    </tr>
+                                    <tr>
+                                        <SinglePieceOfDoctrine doctrineKey="highSituationalAwareness" state={state} rowSpan={2}
+                                                               callback={this.updateEvaluation}/>
+                                        <SinglePieceOfDoctrine doctrineKey="removeBiasAndDuplication" state={state}
+                                                           callback={this.updateEvaluation}/>
+                                    </tr>
+                                    <tr>
+                                        <SinglePieceOfDoctrine doctrineKey="methods" state={state}
+                                                               callback={this.updateEvaluation}/>
+                                    </tr>
+                                    
+
+                                    
                                     </tbody>
                                 </Table>
                             </div>

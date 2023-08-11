@@ -1,5 +1,5 @@
 import * as React from "react";
-import strings from './strings_longer';
+import strings_longer from './strings_longer';
 import {Button, ButtonGroup, PopoverBody, PopoverHeader, UncontrolledPopover} from 'reactstrap';
 import './popover.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
@@ -122,7 +122,8 @@ class SinglePieceOfDoctrine extends React.Component {
     }
 
     render() {
-        let text = strings[this.props.doctrineKey].mainText || strings[this.props.doctrineKey];
+        let text = strings_longer[this.props.doctrineKey].mainText || strings_longer[this.props.doctrineKey];
+        let shortText = strings_longer[this.props.doctrineKey].shortText || text;
 
         let rowSpan = this.props.rowSpan;
         let colSpan = this.props.colSpan;
@@ -173,8 +174,8 @@ class SinglePieceOfDoctrine extends React.Component {
 
         let explanations = [];
         if (this.state && this.state.hover && this.state.expanded) {
-            if (strings[this.props.doctrineKey].explanations) {
-                explanations = strings[this.props.doctrineKey].explanations.map(function (cv) {
+            if (strings_longer[this.props.doctrineKey].explanations) {
+                explanations = strings_longer[this.props.doctrineKey].explanations.map(function (cv) {
                     return (<li>{cv}</li>);
                 });
             }
@@ -213,7 +214,7 @@ class SinglePieceOfDoctrine extends React.Component {
         }
 
 
-        let textContent = <span style={textStyle}>{text}</span>;
+        let textContent = <span style={textStyle}>{shortText}</span>;
 
 
         return (<td onClick={this.enableHover}
