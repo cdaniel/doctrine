@@ -155,7 +155,7 @@ let strings = new LocalizedStrings({
           mainText:"Think aptitude and attitude",
           explanations: [
             "Each team may contain discrete skills (e.g. networks, marketing, engineering, finance) known as aptitudes. But each aptitude has an attitude i.e. the culture, methods and techniques for agile development of an entirely novel act are not the same as those for building a highly industrialised component. When determining composition of team, it is a duty to consider not only the aptitude but the attitude. The combination of both is what we call capability.",
-            "Understand that people not only have aptitudes (e.g. finance, engineering, operations and marketing) but different attitudes (pioneer, settler and town planner). The mindsets are different."
+            "Understand that people not only have aptitudes (e.g. finance, engineering, operations and marketing) but different attitudes (explorer, villager and town planner). The mindsets are different."
           ]
         },
         thinkSmallTeam: {
@@ -310,17 +310,17 @@ let strings = new LocalizedStrings({
           ]
         },
         noOneCulture: {
-          mainText: "There is no one culture (e.g. pioneers, settlers and town planners)",
+          mainText: "There is no one culture (e.g. explorer, villager and town planners)",
           shortText: "No single culture",
           explanations: [
-            "Understand that a company which plans for longevity needs to cope with not only the discovery of uncharted components but the use of the industrialised and the transition between these two extremes. You will need different attitudes. You will therefore create many cultures in your organisation e.g. pioneers, settlers and town planners have different cultures. This is not a negative and don't try to grind everyone into a single bland culture. It will not make them happy."
+            "Understand that a company which plans for longevity needs to cope with not only the discovery of uncharted components but the use of the industrialised and the transition between these two extremes. You will need different attitudes. You will therefore create many cultures in your organisation e.g. explorer, villager and town planners have different cultures. This is not a negative and don't try to grind everyone into a single bland culture. It will not make them happy."
           ]
         },
         constantEvolution: {
           mainText: "Design for constant evolution",
           explanations: [
-            "Whilst a team might become a semi permanent structure, the work it undertakes will evolve. It is therefore a duty to ensure that work evolves through the organisation e.g. a pioneering team discovers an uncharted space, a team of settlers take the work and productise it hence forcing the pioneers to move on. A team of town planners then industrialise the product when appropriate forcing the settlers to move on.",
-            "Create an organisational system which copes with the constant ebb and flow in the landscape. Ideally, changes should flow through your organisation without the needed for constant restructuring. A cell based structure using a system of theft with pioneers, settlers and town planners is one such system."
+            "Whilst a team might become a semi permanent structure, the work it undertakes will evolve. It is therefore a duty to ensure that work evolves through the organisation e.g. an explorer team discovers an uncharted space, a team of settlers take the work and productise it hence forcing the explorers to move on. A team of town planners then industrialise the product when appropriate forcing the settlers to move on.",
+            "Create an organisational system which copes with the constant ebb and flow in the landscape. Ideally, changes should flow through your organisation without the needed for constant restructuring. A cell based structure using a system of theft with explorer, villager and town planners is one such system."
           ]
         },
     }
