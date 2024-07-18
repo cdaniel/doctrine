@@ -22,7 +22,6 @@ import SinglePieceOfDoctrine from './SinglePieceOfDoctrine';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faChalkboard,
-    faGlobe,
     faFileDownload,
     faFileImage,
     faFileUpload,
@@ -33,7 +32,6 @@ import Files from 'react-files';
 import HttpsRedirect from 'react-https-redirect';
 import html2canvas from 'html2canvas';
 import HelpSystem from "./HelpSystem";
-
 
 const logoStyle = {
     height: 50
@@ -190,7 +188,15 @@ class App extends React.Component {
     switchLanguage = (lang) => {
         strings.setLanguage(lang);
         this.setState({ language: lang });
-    };
+    }
+
+    getSwitchLanguageButtonCaption(){
+        if(this.state.language === 'en'){
+            return <div><img src="fr.png" alt="Switch to French" style={{ width: '15px', height: 'auto',   filter: 'grayscale(70%)'    }}/>&nbsp;<img src="uk.png" alt="English is the current language" style={{ width: '15px', height: 'auto'}}/></div>
+        } else if (this.state.language === 'fr') {
+            return <div><img src="fr.png" alt="French is the current language" style={{ width: '15px', height: 'auto'  }}/>&nbsp;<img src="uk.png" alt="Switch to English" style={{ width: '15px', height: 'auto',   filter: 'grayscale(70%)'  }}/></div>
+        }
+    }
 
     render() {
         let saveButtonVariant = this.state.dirty ? "warning" : "outline";
@@ -208,7 +214,7 @@ class App extends React.Component {
                                 <Nav navbar className='rightNav ml-auto'>
                                     <NavItem>
                                         <NavLink href="#switch-lang" onClick={() => this.switchLanguage(this.state.language === 'en' ? 'fr' : 'en')} style={{ fontSize: 'small' }}>
-                                            <FontAwesomeIcon icon={faGlobe} />&nbsp;{this.state.language === 'en' ? 'Switch to French' : 'Switch to English'}
+                                            {this.getSwitchLanguageButtonCaption()}
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
@@ -444,10 +450,12 @@ class App extends React.Component {
                     </Row>
                     <Row>
                         <Col sm={{ size: 12 }} style={{ textAlign: 'right', fontSize: 'smaller' }}>
+                        <span><a href="https://github.com/cdaniel/doctrine/"><Badge
+                                color="secondary">Fork me on Github!</Badge></a></span><br/>
                             <span>Based on Simon Wardley's work and <a
-                                href={"https://wardleypedia.org/mediawiki/index.php/Doctrine_Patterns"}>Wardleypedia</a>. </span>
-                            <span><a href="https://github.com/cdaniel/doctrine/"><Badge
-                                color="secondary">Fork me on Github!</Badge></a></span>
+                                href={"https://wardleypedia.org/mediawiki/index.php/Doctrine_Patterns"}>Wardleypedia</a>. </span><br/>
+                                <span> <a href="https://www.flaticon.com/free-icons/france" title="france icons">France</a> & <a href="https://www.flaticon.com/free-icons/uk" title="uk icons">UK</a> icons created by Freepik - Flaticon </span>
+                            
                         </Col>
                     </Row>
                 </Container>
