@@ -346,8 +346,8 @@ let strings = new LocalizedStrings({
       ]
     },
     systematicLearning: {
-      mainText: "Utiliser un mécanisme d'apprentissage systématique (un biais vers les données)",
-      shortText: "Biais vers les données",
+      mainText: "Utiliser un mécanisme d'apprentissage systématique (priorités aux données)",
+      shortText: "Priorités aux données",
       explanations: [
         "Le but de la cartographie n'est pas simplement de créer une carte et une compréhension partagée mais aussi d'apprendre des modèles climatiques, des doctrines et des jeux contextuels spécifiques. Les cartes fournissent une méthode systématique pour le faire tant que vous les rassemblez, les examinez et en apprenez. Ayez un biais vers cet apprentissage et l'utilisation des données.",
         "Le système de gouvernance doit fournir un mécanisme de mesure cohérente des résultats et d'amélioration continue des mesures."
@@ -385,7 +385,7 @@ let strings = new LocalizedStrings({
       ]
     },
     removeBiasAndDuplication: {
-      mainText: "Supprimer les biais et la duplication",
+      mainText: "Supprimer les biais et les redondances",
       explanations: [
         "Nous ne partageons pas seulement des cartes, nous les rassemblons dans le but de supprimer la duplication (c'est-à-dire reconstruire la même chose) et les biais (c'est-à-dire construire sur mesure ce qui est une commodité). Ce n'est pas optionnel et non, votre système comptable n'est pas unique à cause de la couleur de vos factures et vous n'avez pas une manière unique d'acheter de l'espace publicitaire. Nous avons tous le devoir de supprimer la duplication et les biais dans l'organisation.",
         "Utilisez plusieurs cartes pour vous aider à supprimer la duplication et les biais au sein d'une organisation. Vous trouverez souvent dans toute grande organisation des personnes fabriquant sur mesure ce qui est une commodité ou reconstruisant quelque chose qui existe ailleurs. Souvenez-vous, qu'elles ne font pas cela parce qu'elles sont idiotes mais à cause de l'inertie préexistante ou du manque de tout mécanisme de communication efficace, c'est-à-dire qu'elles ne savent tout simplement pas que cela existe ailleurs. Attention, le niveau de duplication au sein de la plupart des organisations dépasse largement toutes les attentes qu'elles pourraient avoir et vous marchez souvent sur les orteils de quelqu'un projet de favori. Les grandes entreprises distribuées parlent souvent de duplication en chiffres uniques, par exemple nous avons six systèmes de gestion de contenu d'entreprise. Elles réagissent mal lorsque il est \"découvert\" qu'elles en ont des centaines, voire des \"milliers\". Les gens peuvent devenir très défensifs dans cet espace."
@@ -410,8 +410,8 @@ let strings = new LocalizedStrings({
 
     phaseII: "II - Devenir Plus Conscient du Contexte",
     beTransparent: {
-      mainText: "Soyez transparent (un biais vers l'ouverture)",
-      shortText: "Un biais vers l'ouverture",
+      mainText: "Soyez transparent (tendre vers l'ouverture)",
+      shortText: "L'ouverture comme principe directeur",
       explanations: [
         "Nous ne cachons pas nos cartes, nous les partageons et permettons aux autres de défier et de questionner nos hypothèses. L'acte de partage est essentiel car il nous aide à apprendre. La transparence exige également que nous supprimions tout le bruit, le charabia inutile qui gêne l'apprentissage. Toute personne ne souhaitant pas apprendre, renoncera à une part de gâteau et sera aidée à trouver un nouvel emploi chez un concurrent.",
         "Ayez un biais vers l'ouverture au sein de votre organisation. Si vous souhaitez apprendre efficacement sur le paysage, vous devez partager vos cartes avec les autres et leur permettre d'ajouter leur sagesse et leur défi au processus. Créer des cartes en secret dans vos organisations est un moyen sûr d'avoir une future réunion où quelqu'un vous signalera la chose évidente que vous avez manquée.",
@@ -464,7 +464,7 @@ let strings = new LocalizedStrings({
       ]
     },
     effectivenessOverEfficiency: {
-      mainText: "Efficacité avant efficacité",
+      mainText: "L'efficacité avant la performance",
       explanations: [
         "Bien que l'optimisation du flux soit importante, faites attention à ne pas perdre un temps précieux à rendre plus efficace ce qui est inefficace. Comprenez le paysage et comment il change avant de tenter d'optimiser le flux. Supprimez l'inefficace avant de vous concentrer sur l'efficacité.",
         "Dans tout système, il y a des risques. Utilisez les cartes chaque fois que possible pour vous aider à comprendre les modes de défaillance, ce qui peut mal tourner et ce qui sera impacté si un composant échoue. Essayez autant que possible de réduire les risques en distribuant les systèmes, en les concevant pour qu'ils puissent échouer et en introduisant constamment des défaillances (utilisation de moteurs de chaos comme le chaos monkey de Netflix). Atténuez les modes de défaillance connus tels que la construction d'efforts à grande échelle (type Étoile de la mort)."
@@ -507,8 +507,8 @@ let strings = new LocalizedStrings({
       ]
     },
     action: {
-      mainText: "Un biais vers l'action (apprendre en jouant le jeu)",
-      shortText: "Un biais vers l'action",
+      mainText: "Priorité à l'action : apprendre en faisant",
+      shortText: "Agir et apprendre en faisant",
       explanations: [
         "Les modèles économiques communs et les formes de jeu contextuelles spécifiques sont découverts en jouant le jeu. Par conséquent, les choix stratégiques doivent être faits par ceux qui jouent le jeu et la stratégie doit être développée en interne et non en externe. Nous devons également partager ce que nous avons appris (d'où, encore une fois, les cartes et le but de les rassembler). Engager des consultants en stratégie pour rédiger des documents indiquant ce que nous devons faire recevra une autre bonne réprimande et absolument aucun gâteau. Certes, utilisez des personnes extérieures pour apprendre des formes de jeu contextuelles spécifiques, mais c'est nous qui jouons le jeu.",
         "Ne tentez pas de créer la carte parfaite. Ayez un biais vers l'action car le paysage changera et vous découvrirez plus grâce à l'action. Vous apprenez en jouant le jeu."
@@ -545,8 +545,8 @@ let strings = new LocalizedStrings({
       ]
     },
     biasTowardsNew: {
-      mainText: "Un biais vers le nouveau (soyez curieux, prenez des risques appropriés)",
-      shortText: "Un biais vers le nouveau",
+      mainText: "Priorité à l'innovation (soyez curieux, prenez des risques appropriés)",
+      shortText: "Priorité à l'innovation",
       explanations: [
         "Quoi que vous fassiez, cela évoluera. Ayez donc un biais vers le nouveau, soyez curieux et prenez des risques appropriés. Soyez prêt à expérimenter.",
         "Nous avons mis l'accent sur une approche de l'innovation de l'extérieur vers l'intérieur où le changement était conduit et encouragé au niveau local par des fonds de démarrage plutôt que le gouvernement essayant d’imposer sa propre conception du changement à travers \"les grandes IT\". Le rôle du gouvernement central a été réduit à fournir une expertise technique, une fonction de client intelligent pour remettre en question ce qui était fait, des services de composants industrialisés, encourager le changement et montrer à quoi ressemblait le bien."
