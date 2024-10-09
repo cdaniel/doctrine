@@ -339,15 +339,15 @@ let strings = new LocalizedStrings({
     phaseI: "I - Éliminer les pratiques contreproductives",
     knowYourUsers: {
       mainText: "Connaître vos utilisateurs (par ex. clients, actionnaires, régulateurs, personnel)",
-      shortText: "Connaître vos utilisateurs",
+      shortText: "Connaissance des utilisateurs",
       explanations: [
         "Toute valeur que nous créons passe par la satisfaction des besoins d'autrui. Un mantra du type \"ne pas être aussi mauvais que les concurrents\" n'est pas acceptable. Nous devons être les meilleurs que nous pouvons être.",
         "Lorsque vous cartographiez un paysage, vous devez savoir qui sont vos utilisateurs, par ex. clients, actionnaires, régulateurs et personnel."
       ]
     },
     systematicLearning: {
-      mainText: "Utiliser un mécanisme d'apprentissage systématique (un biais vers les données)",
-      shortText: "Biais vers les données",
+      mainText: "Utiliser un mécanisme d'apprentissage systématique (priorités aux données)",
+      shortText: "Priorités aux données",
       explanations: [
         "Le but de la cartographie n'est pas simplement de créer une carte et une compréhension partagée mais aussi d'apprendre des modèles climatiques, des doctrines et des jeux contextuels spécifiques. Les cartes fournissent une méthode systématique pour le faire tant que vous les rassemblez, les examinez et en apprenez. Ayez un biais vers cet apprentissage et l'utilisation des données.",
         "Le système de gouvernance doit fournir un mécanisme de mesure cohérente des résultats et d'amélioration continue des mesures."
@@ -355,7 +355,7 @@ let strings = new LocalizedStrings({
     },
     highSituationalAwareness: {
       mainText: "Se concentrer sur une grande conscience situationnelle (comprendre ce qui est envisagé)",
-      shortText: "Comprendre ce qui est envisagé",
+      shortText: "Prise en compte du contexte",
       explanations: [
         "Il existe une corrélation assez forte entre la conscience et la performance, alors concentrez-vous là-dessus. Essayez de comprendre le paysage dans lequel vous êtes en concurrence et comprenez toute proposition en termes de cela. Regardez avant de sauter.",
         "Un échec majeur de « Mieux pour Moins » a été le manque de mise en valeur des cartes. Il fallait augmenter la conscience situationnelle au-delà de simples modèles mentaux et de structures comme l'ILC. Pour ce faire, nous devions développer des cartes au sein du gouvernement, ce qui nécessite une ancre (besoin de l'utilisateur), une compréhension de la position (la chaîne de valeur et les composants impliqués) et une compréhension du mouvement (évolution). Pour commencer, le système de gouvernance proposé devait clairement refléter les besoins des utilisateurs dans tous ses processus de prise de décision. Les utilisateurs incluent non seulement les utilisateurs des départements mais aussi le grand public qui interagira avec les services fournis. Il était donc essentiel que les besoins de ces utilisateurs soient déterminés dès le départ, représentés dans la création de toute proposition et que tous les résultats attendus de toute proposition soient fixés par rapport à ces besoins. Mais cela ne suffisait pas, il fallait également la chaîne de valeur qui fournissait ces besoins utilisateurs et comment les composants étaient évolués. Les cartes sont donc devenues une partie critique de la structure de gouvernance."
@@ -363,7 +363,7 @@ let strings = new LocalizedStrings({
     },
     commonLanguage: {
       mainText: "Utiliser un langage commun (nécessaire à la collaboration)",
-      shortText: "Langage commun",
+      shortText: "Utilisation d'un langage commun",
       explanations: [
         "Au lieu d'utiliser plusieurs façons différentes d'expliquer la même chose entre différentes fonctions de l'entreprise, nous en utilisons une seule - une carte. Si vous ne pouvez pas cartographier ce que vous faites, ne le faites pas. La conscience situationnelle n'est pas optionnelle.",
         "Un besoin essentiel pour une collaboration efficace est un langage commun. Les cartes permettent à de nombreuses personnes de différentes aptitudes (par ex. marketing, opérations, finances et IT) de travailler ensemble afin de créer une compréhension commune. La collaboration sans un langage commun n'est que du bruit avant l'échec.",
@@ -372,20 +372,20 @@ let strings = new LocalizedStrings({
     },
     challenge: {
       mainText: "Remettre en question les hypothèses (parlez et posez des questions)",
-      shortText: "Remettre en question les hypothèses",
+      shortText: "Remise en question des idées préconçues",
       explanations: [
         "C'est un devoir pour tout le monde dans l'entreprise de remettre en question les hypothèses. Dans la mesure du possible, nous utilisons les données collectées à partir des cartes car le but des cartes est de révéler la réflexion. Je me fiche si c'était mon projet de favori, vous me direz ouvertement et honnêtement pourquoi vous pensez que j'ai tort. Le défi nécessite transparence et confiance. Toute forme de représailles ou de partialité contre quelqu'un pour avoir défié est un péché mortel qui ne sera pas pardonné et vous serez cartonné pour travailler chez un concurrent. Pour référence, en tant que PDG de Fotango, j'ai nommé mon directeur financier comme adjoint en 2004. Une de ses fonctions était de me défier et d'être d'accord / de ne pas être d'accord avec mes choix.",
         "Les cartes permettent de révéler les hypothèses de manière visuelle. Vous devriez encourager le défi de toute carte en vous concentrant sur la création d'une meilleure carte et d'une meilleure compréhension. N'ayez pas peur du défi, il n'y a pas de place pour l'ego si vous voulez apprendre."
       ]
     },
     focusOnUserNeeds: {
-      mainText: "Se concentrer sur les besoins des utilisateurs",
+      mainText: "Concentration sur les besoins des utilisateurs",
       explanations: [
         "Une partie essentielle de la cartographie est l'ancrage des besoins des utilisateurs. Idéalement, vous souhaitez créer un environnement où vos besoins sont atteints en répondant aux besoins de vos utilisateurs. Soyez conscient que ces besoins évolueront en raison de la concurrence et dans l'espace inexploré ils sont incertains. Soyez également conscient que les utilisateurs peuvent avoir des besoins différents et concurrents et soyez prêt à équilibrer le conflit."
       ]
     },
     removeBiasAndDuplication: {
-      mainText: "Supprimer les biais et la duplication",
+      mainText: "Suppression des biais et des redondances",
       explanations: [
         "Nous ne partageons pas seulement des cartes, nous les rassemblons dans le but de supprimer la duplication (c'est-à-dire reconstruire la même chose) et les biais (c'est-à-dire construire sur mesure ce qui est une commodité). Ce n'est pas optionnel et non, votre système comptable n'est pas unique à cause de la couleur de vos factures et vous n'avez pas une manière unique d'acheter de l'espace publicitaire. Nous avons tous le devoir de supprimer la duplication et les biais dans l'organisation.",
         "Utilisez plusieurs cartes pour vous aider à supprimer la duplication et les biais au sein d'une organisation. Vous trouverez souvent dans toute grande organisation des personnes fabriquant sur mesure ce qui est une commodité ou reconstruisant quelque chose qui existe ailleurs. Souvenez-vous, qu'elles ne font pas cela parce qu'elles sont idiotes mais à cause de l'inertie préexistante ou du manque de tout mécanisme de communication efficace, c'est-à-dire qu'elles ne savent tout simplement pas que cela existe ailleurs. Attention, le niveau de duplication au sein de la plupart des organisations dépasse largement toutes les attentes qu'elles pourraient avoir et vous marchez souvent sur les orteils de quelqu'un projet de favori. Les grandes entreprises distribuées parlent souvent de duplication en chiffres uniques, par exemple nous avons six systèmes de gestion de contenu d'entreprise. Elles réagissent mal lorsque il est \"découvert\" qu'elles en ont des centaines, voire des \"milliers\". Les gens peuvent devenir très défensifs dans cet espace."
@@ -393,14 +393,14 @@ let strings = new LocalizedStrings({
     },
     thinkSmallDetails: {
       mainText: "Penser petit (comme dans connaître les détails)",
-      shortText: "Connaître les détails",
+      shortText: "Compréhension des spécificités",
       explanations: [
         "Connaissez les détails, utilisez de petites équipes et divisez les grands paysages en petits contrats. Ne vous laissez pas effrayer par la complexité de la gestion ou par \"trop d'interfaces à gérer\"."
       ]
     },
     methods: {
       mainText: "Utiliser des méthodes appropriées (par ex. agile vs lean vs six sigma)",
-      shortText: "Utiliser des méthodes appropriées",
+      shortText: "Utilisation de méthodes appropriées",
       explanations: [
         "Toute personne suggérant que nous devrions être complètement agiles, complètement lean ou complètement six sigma recevra une bonne discussion sans gâteau. Même chose avec d'autres suggérant une méthode d'achat unique pour tous.",
         "Essayez d'éviter la tyrannie de l'unité. Comprenez qu'il n'y a pas de solution magique et que vous devez utiliser plusieurs méthodes (par ex. agile ou lean ou six sigma) selon les besoins. Dans tout grand système, plusieurs méthodes peuvent être utilisées en même temps. Soyez attentif à l'ego ici, des tribus peuvent se former avec une ferveur presque religieuse à propos de la justesse de leur méthode.",
@@ -410,8 +410,8 @@ let strings = new LocalizedStrings({
 
     phaseII: "II - Devenir Plus Conscient du Contexte",
     beTransparent: {
-      mainText: "Soyez transparent (un biais vers l'ouverture)",
-      shortText: "Un biais vers l'ouverture",
+      mainText: "Soyez transparent (tendre vers l'ouverture)",
+      shortText: "L'ouverture comme principe directeur",
       explanations: [
         "Nous ne cachons pas nos cartes, nous les partageons et permettons aux autres de défier et de questionner nos hypothèses. L'acte de partage est essentiel car il nous aide à apprendre. La transparence exige également que nous supprimions tout le bruit, le charabia inutile qui gêne l'apprentissage. Toute personne ne souhaitant pas apprendre, renoncera à une part de gâteau et sera aidée à trouver un nouvel emploi chez un concurrent.",
         "Ayez un biais vers l'ouverture au sein de votre organisation. Si vous souhaitez apprendre efficacement sur le paysage, vous devez partager vos cartes avec les autres et leur permettre d'ajouter leur sagesse et leur défi au processus. Créer des cartes en secret dans vos organisations est un moyen sûr d'avoir une future réunion où quelqu'un vous signalera la chose évidente que vous avez manquée.",
@@ -435,8 +435,8 @@ let strings = new LocalizedStrings({
       ]
     },
     thinkFast: {
-      mainText: "Penser rapide, peu coûteux, retenu et élégant (FIRE, anciennement FIST)",
-      shortText: "Penser rapide, peu coûteux, retenu et élégant",
+      mainText: "Penser rapide, peu coûteux, restreint et élégant (FIRE, anciennement FIST)",
+      shortText: "Solutions Frugales, Peu Coûteuses, Restreintes et Élégantes",
       explanations: [
         "D'accord, Dan Ward pourrait dire FIRE (et achetez son livre) mais je vais m'en tenir à ses termes originaux. Vous bougerez rapidement avec un biais vers l'action, vous utiliserez des composants peu coûteux et serez frugal autant que possible, vous simplifierez le problème autant que possible et vous construirez en petits composants ... sinon vous NE construirez pas.",
         "Décomposez les grands systèmes en petits composants, utilisez et réutilisez des composants peu coûteux autant que possible, contraignez les budgets et le temps, construisez aussi simplement et élégamment que possible.",
@@ -444,27 +444,27 @@ let strings = new LocalizedStrings({
       ]
     },
     focusOutcome: {
-      mainText: "Concentrez-vous sur le résultat, pas sur un contrat (par ex. développement basé sur la valeur)",
-      shortText: "Concentrez-vous sur le résultat",
+      mainText: "Concentrez-vous sur les résultats, pas sur un contrat (par ex. développement basé sur la valeur)",
+      shortText: "Focus sur les résultats",
       explanations: [
         "Lorsque vous utilisez des contrats, essayez de vous concentrer sur le résultat et ce que vous essayez d'atteindre plutôt que sur le contrat lui-même. Réalisez que différents types de contrats seront nécessaires, par ex. externalisé ou basé sur le temps et les matériaux ou le développement basé sur la valeur. En plus de se concentrer sur les résultats, essayez de garder les contrats contraints en termes de temps et de budget."
       ]
     },
     appropriateTools: {
       mainText: "Utilisez des outils appropriés (par ex. cartographie, modèles financiers)",
-      shortText: "Utilisez des outils appropriés",
+      shortText: "Utilisation d'outils appropriés",
       explanations: [] // Pas de traduction nécessaire car aucun texte fourni
     },
     manageInertia: {
       mainText: "Gérez l'inertie (par ex. pratique existante, capital politique, investissement précédent)",
-      shortText: "Gérez l'inertie",
+      shortText: "Gestion de l'inertie",
       explanations: [
         "Nous en avons tous. C'est causé par le succès passé. Vous réaliserez que vous en avez. Il y a environ seize formes différentes et vous apprendrez à les reconnaître. Lorsque vous vous surprenez à dire \"mais c'est comme ça que nous faisons\" ou \"mais cela a toujours fonctionné dans le passé\" ou \"ne touchez pas à la machine car elle n'est pas cassée\", vous vous demanderez pourquoi vous dites cela. Si quelqu'un remet en question ce qui est fait, vous ÉCOUTEREZ et vous vous demanderez pourquoi vous réagissez de cette manière.",
         "À un moment donné, vous ferez face à l'inertie du changement, par ex. pratique existante, capital politique ou investissement précédent. Essayez de comprendre la cause principale. Idéalement, utilisez une carte pour anticiper avant de rencontrer l'inertie et avoir ainsi des solutions et des contre-arguments prêts. Si possible, utilisez les cartes pour permettre aux gens de découvrir leur propre inertie."
       ]
     },
     effectivenessOverEfficiency: {
-      mainText: "Efficacité avant efficacité",
+      mainText: "L'efficacité avant la performance",
       explanations: [
         "Bien que l'optimisation du flux soit importante, faites attention à ne pas perdre un temps précieux à rendre plus efficace ce qui est inefficace. Comprenez le paysage et comment il change avant de tenter d'optimiser le flux. Supprimez l'inefficace avant de vous concentrer sur l'efficacité.",
         "Dans tout système, il y a des risques. Utilisez les cartes chaque fois que possible pour vous aider à comprendre les modes de défaillance, ce qui peut mal tourner et ce qui sera impacté si un composant échoue. Essayez autant que possible de réduire les risques en distribuant les systèmes, en les concevant pour qu'ils puissent échouer et en introduisant constamment des défaillances (utilisation de moteurs de chaos comme le chaos monkey de Netflix). Atténuez les modes de défaillance connus tels que la construction d'efforts à grande échelle (type Étoile de la mort)."
@@ -479,21 +479,21 @@ let strings = new LocalizedStrings({
     },
     thinkSmallTeam: {
       mainText: "Pensez petit (comme dans les équipes)",
-      shortText: "Pensez petites équipes",
+      shortText: "Utilisation d'équipes réduites",
       explanations: [
         "Tout doit être décomposé en petites équipes. À titre indicatif, lors de l'exploration de l'espace inexploré, une équipe de 3 à 5 semble appropriée. Lors de la création d'une capacité de produit/service, une équipe de deux pizzas (c'est-à-dire 12) semble plus appropriée. Lors de la fourniture d'un composant industrialisé, une équipe plus large peut être justifiée. En aucun cas, la taille de cette équipe ne doit approcher de près le nombre de Dunbar. Tout ce qui dépasse 40 devrait être considéré comme très douteux et un candidat immédiat pour être divisé en équipes plus petites basées sur les besoins des utilisateurs."
       ]
     },
     standards: {
       mainText: "Utilisez des normes lorsque c'est approprié",
-      shortText: "Utilisez des normes",
+      shortText: "Utilisation des normes",
       explanations: [
         "NB : toute personne suggérant que nous devrions créer notre propre service cloud où un service de facto existe court le risque d'être convoquée devant l'entreprise comme la personne essayant de dépenser tout le budget de gâteau sur un projet de vanité. À moins que vous ne puissiez clairement montrer que vous pouvez sur-industrialiser et rendre plus une commodité ce qui existe, alors utilisez le.",
         "Si quelque chose est industrialisé et si des normes existent, essayez de les utiliser. Il y a toujours une tentation de créer une meilleure norme, mais essayez d'éviter cela ou de créer des couches supplémentaires sur d'autres « normes » à moins que vous n'ayez une raison extrêmement convaincante de le faire. Si vous avez besoin d'un grille-pain, achetez un grille-pain et ne tentez pas d'en créer un à partir de zéro."
       ]
     },
     failure: {
-      mainText: "Gérer l'échec",
+      mainText: "Geestion de l'échec",
       explanations: [
         "Dans tout système, il y a des risques. Utilisez les cartes chaque fois que possible pour vous aider à comprendre les modes de défaillance, ce qui peut mal tourner et ce qui sera impacté si un composant échoue. Essayez autant que possible de réduire les risques en distribuant les systèmes, en les concevant pour qu'ils puissent échouer et en introduisant constamment des défaillances (utilisation de moteurs de chaos comme le chaos monkey de Netflix). Atténuez les modes de défaillance connus tels que la construction d'efforts à grande échelle (type Étoile de la mort)."
       ]
@@ -507,15 +507,15 @@ let strings = new LocalizedStrings({
       ]
     },
     action: {
-      mainText: "Un biais vers l'action (apprendre en jouant le jeu)",
-      shortText: "Un biais vers l'action",
+      mainText: "Priorité à l'action : apprendre en faisant",
+      shortText: "Mise en mouvement et apprentissage 'en marchant'",
       explanations: [
         "Les modèles économiques communs et les formes de jeu contextuelles spécifiques sont découverts en jouant le jeu. Par conséquent, les choix stratégiques doivent être faits par ceux qui jouent le jeu et la stratégie doit être développée en interne et non en externe. Nous devons également partager ce que nous avons appris (d'où, encore une fois, les cartes et le but de les rassembler). Engager des consultants en stratégie pour rédiger des documents indiquant ce que nous devons faire recevra une autre bonne réprimande et absolument aucun gâteau. Certes, utilisez des personnes extérieures pour apprendre des formes de jeu contextuelles spécifiques, mais c'est nous qui jouons le jeu.",
         "Ne tentez pas de créer la carte parfaite. Ayez un biais vers l'action car le paysage changera et vous découvrirez plus grâce à l'action. Vous apprenez en jouant le jeu."
       ]
     },
     distributePower: {
-      mainText: "Distribuer le pouvoir et la prise de décision",
+      mainText: "Distribution du pouvoir et de la prise de décision",
       explanations: [
         "Ayez un biais vers la distribution du pouvoir depuis le centre, y compris vous-même. Mettez le pouvoir entre les mains de ceux qui sont les plus proches des choix à faire.",
         "Les départements et les groupes devraient pouvoir s'organiser comme ils l'entendent pour répondre à la politique centrale. Ainsi, la procédure de gouvernance devrait s'abstenir d'imposer directement des méthodes de projet et des structures aux départements et aux groupes, et permettre la prise de décision autonome. Les améliorations apportées aux modes de fonctionnement pourraient être réalisées par le biais de cartes, par ex. si un département pense que tout doit être externalisé, nous pourrions utiliser leurs propres cartes pour les aider à remettre en question leur propre réflexion."
@@ -524,29 +524,29 @@ let strings = new LocalizedStrings({
 
     phaseIII: "III - Optimisation des Ressources pour une Efficacité Accrue",
     purpose: {
-      mainText: "Fournir un but, de la maîtrise et de l'autonomie",
+      mainText: "Un but, de la maîtrise et de l'autonomie",
       explanations: [
         "Chaque équipe doit être autonome dans les limites de ce qu'elle est censée faire (décrit par une fonction de fitness). Chaque équipe possèdera donc ce qu'elle fait. Chaque équipe doit pouvoir voir comment elle s'insère dans l'ensemble (donc des cartes) et développer une maîtrise à la fois en aptitude et en attitude.",
         "Donnez aux gens un but (y compris un impératif moral et une portée) pour agir. Permettez-leur de développer une maîtrise dans le domaine de leur choix et donnez-leur la liberté (et l'autonomie) d'agir."
       ]
     },
     exceptionalStandards: {
-      mainText: "Fixez des normes exceptionnelles (le bien n'est tout simplement pas acceptable)",
-      shortText: "Fixez des normes exceptionnelles",
+      mainText: "Fixez des critères d'excellence (le bien n'est tout simplement pas acceptable)",
+      shortText: "Définition de critères d'excellence",
       explanations: [
         "Ne vous contentez pas d’aussi bien ou légèrement mieux que les concurrents. Cherchez toujours le meilleur possible."
       ]
     },
     direction: {
       mainText: "Engagez-vous dans la direction, soyez adaptatif en chemin (traverser la rivière en sentant les pierres)",
-      shortText: "Engagez-vous dans la direction",
+      shortText: "Engagement vers la ligne directrice",
       explanations: [
         "Une fois que vous avez défini une direction, engagez-vous y. Il y aura souvent des obstacles et des épreuves, mais ne changez pas simplement de direction parce qu'une seule étape est difficile. Essayez de trouver des chemins pour contourner les obstacles. Si vous construisez un système et qu'un composant commun n'est pas tel que prévu, cela peut souvent prouver une opportunité de marché."
       ]
     },
     biasTowardsNew: {
-      mainText: "Un biais vers le nouveau (soyez curieux, prenez des risques appropriés)",
-      shortText: "Un biais vers le nouveau",
+      mainText: "Priorité à l'innovation (soyez curieux, prenez des risques appropriés)",
+      shortText: "Priorité à l'innovation",
       explanations: [
         "Quoi que vous fassiez, cela évoluera. Ayez donc un biais vers le nouveau, soyez curieux et prenez des risques appropriés. Soyez prêt à expérimenter.",
         "Nous avons mis l'accent sur une approche de l'innovation de l'extérieur vers l'intérieur où le changement était conduit et encouragé au niveau local par des fonds de démarrage plutôt que le gouvernement essayant d’imposer sa propre conception du changement à travers \"les grandes IT\". Le rôle du gouvernement central a été réduit à fournir une expertise technique, une fonction de client intelligent pour remettre en question ce qui était fait, des services de composants industrialisés, encourager le changement et montrer à quoi ressemblait le bien."
@@ -562,7 +562,7 @@ let strings = new LocalizedStrings({
     },
     optimiseFlow: {
       mainText: "Optimiser le flux (éliminer les goulets d'étranglement)",
-      shortText: "Optimiser le flux",
+      shortText: "Amélioration de la fluidité",
       explanations: [
         "Que ce soit avec ce que nous construisons ou comment, nous sommes tenus d'éliminer les goulets d'étranglement et d'améliorer le débit autant que possible. Cependant, attention à ne pas rendre l'inefficace plus efficient plutôt que de rendre l'inefficace plus efficace - d'où l'importance de la conscience situationnelle. Tout ce qui gêne la satisfaction des besoins des utilisateurs, la rapidité, la transparence des informations pertinentes sera traité de manière impitoyable et renvoyé à la guillotine, par ex. les processus de frais de l'entreprise. Indice: il est généralement beaucoup plus efficace de donner simplement à tout le monde des cartes de crédit de l'entreprise, de dire « dépenser dans l'intérêt de l'entreprise » et de laisser les comptes trier les factures de carte de crédit plutôt que de faire remplir aux employés des formulaires de frais.",
         "Dans une carte, il y aura de nombreux flux de capital – que ce soit d'informations, de risques, sociaux ou financiers. Essayez d'optimiser cela et d'éliminer les goulets d'étranglement."
@@ -570,7 +570,7 @@ let strings = new LocalizedStrings({
     },
     thinkBig: {
       mainText: "Penser grand (inspirer les autres, donner une direction)",
-      shortText: "Inspirer les autres",
+      shortText: "Ëtre source d'inspiration",
       explanations: [
         "Bien que les actions que vous entreprenez, la manière dont vous vous organisez et le souci du détail vous obligent à penser petit, lorsque vous inspirez les autres, donnez une direction et un impératif moral, pensez grand. Votre objectif n’est pas de défendre le col étroit des Thermopyles mais de vaincre l'armée persane et de sauver les états grecs.",
         "Nous devons sortir de la mentalité de réflexion sur des systèmes spécifiques et nous attaquer au problème dans son ensemble. Nous devions nous éloigner de ces systèmes isolés individuels. Nous devions changer le mécanisme de livraison par défaut des services publics vers les services en ligne en utilisant des processus automatisés pour la plupart des citoyens. Nous avions besoin d'une approche qui se concentre sans relâche sur la livraison au citoyen et ses besoins."
@@ -578,27 +578,27 @@ let strings = new LocalizedStrings({
     },
     beHumble: {
       mainText: "Soyez humble (écoutez, soyez désintéressé, ayez de la fortitude)",
-      shortText: "Soyez humble",
+      shortText: "Humilité",
       explanations: [
         "Écoutez les autres, soyez désintéressé, ayez de la fortitude et soyez humble. Inspirez les autres par qui vous êtes et ce que vous faites. Il existe de nombreuses façons de manipuler le paysage, par ex. par le marketing, en persuadant les autres que ce qui est une commodité est en quelque sorte différent ou qu’un produit est unique pour eux. Mais ces manipulations ont un coût non seulement externe mais aussi interne. Nous pouvons commencer à croire notre propre battage publicitaire, notre propre infaillibilité et notre « droit » au marché."
       ]
     },
     beOwner: {
       mainText: "Soyez propriétaire (prenez vos responsabilités)",
-      shortText: "Soyez propriétaire",
+      shortText: "Assumer les responsabilités",
       explanations: [
         "Prenez vos responsabilités pour votre environnement, vos actions au sein de celui-ci et la façon dont vous jouez le jeu. Vous pourriez sous-traiter cela à un tiers de la manière dont un joueur d'échecs pourrait sous-traiter son jeu à un autre, mais vous n'apprendrez pas et c'est toujours vous qui perdez."
       ]
     },
     complexStrategy: {
       mainText: "La stratégie est complexe (embrassez l'incertitude)",
-      shortText: "Embrassez l'incertitude",
+      shortText: "Acceptation de l'incertitude",
       explanations: [
         "Il y aura de l'incertitude, des modèles émergents et des surprises en cours de route. C'est la nature même de la concurrence en raison de l'implication d'autres acteurs. Embrassez cela, ne tombez pas dans la tentation de croire que vous pouvez planifier l'avenir. Ce qui compte, ce n'est pas le plan mais la préparation et votre capacité à vous adapter."
       ]
     },
     seekTheBest: {
-      mainText: "Cherchez le meilleur",
+      mainText: "Recherche du meilleur",
       explanations: [
         "Essayez de trouver et de développer les meilleures personnes ayant les meilleures aptitudes et attitudes pour leurs rôles. Investissez pour les garder. Ne les forcez pas à devenir quelque chose qu'ils ne sont pas. Il est tout à fait raisonnable qu'un testeur de systèmes véritablement doué, qui excelle dans un monde de planification urbaine de systèmes massivement compliqués et automatisés, soit payé plus cher que le chef de projet. Ce que vous voulez éviter, c'est de retirer des personnes exceptionnelles de leur rôle et de les mettre dans quelque chose auquel elles ne sont pas adaptées simplement parce qu'elles pensent que c'est la seule façon de progresser. Le leadership, la gestion et l'ingénierie sont toutes des aptitudes, elles sont toutes précieuses et elles doivent fonctionner de concert. Si la hiérarchie de votre organisation reflète uniformément vos échelles salariales, alors vous êtes probablement en train de drainer des talents de là où ils devraient être et de les mettre dans des rôles qu'ils ne sont pas adaptés à occuper. Cela est souvent fait pour des arguments de « responsabilité » ou de « gestion de grandes équipes » (ce qui pousse également les personnes à essayer de constituer des empires) ou de « partage d'expérience » ou de « parcours de carrière », mais il existe d'autres moyens d'y parvenir que de prendre un ingénieur doué et de le transformer en un chef de projet médiocre. C'est probablement l'un des domaines les plus difficiles car l'ego est rapidement rencontré."
       ]
@@ -606,21 +606,21 @@ let strings = new LocalizedStrings({
 
     phaseIV: "IV - Adaptabilité et Évolution Continues",
     landscape: {
-      mainText: "Exploitez le paysage",
+      mainText: "Exploitation du paysage",
       explanations: [
         "Utilisez le paysage à votre avantage, il existe souvent de puissants multiplicateurs de force. Vous pourriez décider de ne pas tirer parti d'un concurrent ou d'un changement sur le marché, mais cela doit être un choix conscient."
       ]
     },
     noCore: {
       mainText: "Il n'y a pas de noyau (tout est transitoire)",
-      shortText: "Il n'y a pas de noyau",
+      shortText: "Penser absence de noyau/coeur business",
       explanations: [
         "Tout est transitoire, ce que vous pensez être le cœur de votre entreprise ne le sera pas à un moment donné dans l'avenir. Les seules choses vraiment statiques sont mortes."
       ]
     },
     ecosystem: {
       mainText: "Écoutez votre écosystème (agit comme un moteur de perception de l’avenir)",
-      shortText: "Écoutez votre écosystème",
+      shortText: "Être à l'écoute de l'écosystème",
       explanations: [
         "Il existe de nombreuses formes différentes d'écosystèmes et de façons de les exploiter. Ceux-ci peuvent être de puissants moteurs de perception (par ex. le modèle ILC) pour les changements futurs ainsi que des sources de coopération avec d'autres ainsi que des alliances défensives et offensives. Mais les écosystèmes doivent être gérés, ils ont besoin de soins comme un jardinier entretient un jardin - parfois vous les laissez pousser sauvages, parfois vous les récoltez, parfois vous les aidez à se diriger ou à se contraindre. Ce sont des compétences particulières que vous pouvez développer, mais le plus important est le principe - écoutez-les.",
         "Nous avons vu l'approche centralisée existante comme problématique parce qu’elle était souvent éloignée des véritables besoins des employés des services publics, des intermédiaires ou des citoyens eux-mêmes. Nous avons envisagé un nouveau groupe d'ingénierie qui travaillerait sur le terrain et repérerait, puis favoriserait les opportunités de changement en première ligne, en travaillant en étroite collaboration avec les prestataires de services."
@@ -628,13 +628,13 @@ let strings = new LocalizedStrings({
     },
     noOneCulture: {
       mainText: "Il n'y a pas de culture unique (ex. pionniers, colons et urbanistes)",
-      shortText: "Pas de culture unique",
+      shortText: "Pluriculturalité",
       explanations: [
         "Comprenez qu'une entreprise qui planifie sa pérennité doit faire face non seulement à la découverte de composants inexplorés mais aussi à l'utilisation des composants industrialisés et à la transition entre ces deux extrêmes. Vous aurez besoin de différentes attitudes. Vous créerez donc de nombreuses cultures dans votre organisation, par ex. les pionniers, les colons et les urbanistes ont des cultures différentes. Ce n'est pas une mauvaise chose et ne tentez pas d'écraser tout le monde dans une seule culture terne. Cela ne les rendra pas heureux."
       ]
     },
     constantEvolution: {
-      mainText: "Concevez pour une évolution constante",
+      mainText: "Design orienté vers l'évolution continue",
       explanations: [
         "Bien qu'une équipe puisse devenir une structure semi-permanente, le travail qu'elle entreprend évoluera. Il est donc de votre devoir de vous assurer que le travail évolue à travers l'organisation, par exemple une équipe pionnière découvre un espace inexploré, une équipe de colons prend le travail et le productivise, forçant ainsi les pionniers à avancer. Une équipe d'urbanistes industrialise ensuite le produit lorsque cela est approprié, obligeant les colons à avancer.",
         "Créez un système organisationnel capable de faire face au flux constant et à l'évolution constante du paysage. Idéalement, les changements devraient traverser votre organisation sans nécessiter de restructuration constante. Une structure en cellules utilisant un système de vol avec des pionniers, des colons et des urbanistes est un tel système."
